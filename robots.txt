@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sss-web-hanoi892.vercel.app/sitemap.xml
