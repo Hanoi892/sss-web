@@ -1,0 +1,29 @@
+{
+  "name": "sss-web",
+  "version": "1.0.0",
+  "description": "베트남 밤문화 및 여행 정보 커뮤니티의 정적 콘텐츠 1차 버전.",
+  "main": "contact.js",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs",
+    "build": "node scripts/build.cjs",
+    "start": "node scripts/dev.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanoi892/sss-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Hanoi892/sss-web/issues"
+  },
+  "homepage": "https://github.com/Hanoi892/sss-web#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.0",
+    "pg": "^8.23.1",
+    "sharp": "^0.35.5"
+  },
+  "private": true
+}
