@@ -4,7 +4,7 @@ const sharp=require('sharp');
 const {randomBytes}=require('node:crypto');
 const {optimize,MAX_BYTES}=require('../lib/optimize.cjs');
 async function verify(input){const result=await optimize(input);assert.ok(result.bytes<=MAX_BYTES);assert.equal(result.bytes,result.buffer.length);const meta=await sharp(result.buffer).metadata();assert.equal(meta.width,result.width);assert.equal(meta.height,result.height);assert.ok(Math.abs(result.width/result.height-result.originalWidth/result.originalHeight)<.01);assert.ok(meta.icc);return result;}
-for(const [name,w,h,q,min] of [['1MB',1400,1000,95,1e6],['5MB',3000,2000,97,5e6],['10MB 이상',4200,3000,98,10e6]])test(name+' 고해상도 JPEG → 307200바이트 이하',{timeout:300000},async()=>{
+for(const [name,w,h,q,min] of [['1MB',1000,650,90,1e6],['5MB',2100,1600,90,5e6],['10MB 이상',4200,3000,98,10e6]])test(name+' 고해상도 JPEG → 307200바이트 이하',{timeout:300000},async()=>{
  const input=await sharp(randomBytes(w*h*3),{raw:{width:w,height:h,channels:3}}).jpeg({quality:q,chromaSubsampling:'4:4:4'}).toBuffer();assert.ok(input.length>=min,`${input.length} >= ${min}`);const result=await verify(input);console.log(JSON.stringify({case:name,inputBytes:input.length,outputBytes:result.bytes,input:[w,h],output:[result.width,result.height],format:result.format}));
 });
 test('압축 가능한 사진은 원본 해상도 유지',async()=>{const input=await sharp({create:{width:4000,height:3000,channels:3,background:'#c65e42'}}).jpeg({quality:100}).toBuffer();const result=await verify(input);assert.equal(result.width,4000);assert.equal(result.height,3000);});
