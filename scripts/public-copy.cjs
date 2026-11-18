@@ -4,10 +4,10 @@ const COMPETING_DIRECTORIES=new Set(['vnbam365.com','vietbamso.com','vietroyalto
 function isCompetingDirectoryAnchor(openingTag){
  const href=openingTag.match(/\bhref\s*=\s*["']([^"']+)["']/i);
  if(!href)return false;
- try{
-  const host=new URL(href[1]).hostname.toLowerCase().replace(/^www\./,'');
-  return [...COMPETING_DIRECTORIES].some(domain=>host===domain||host.endsWith('.'+domain));
- }catch{return false;}
+ const match=href[1].match(/^https?:\/\/([^\/?#]+)/i);
+ if(!match)return false;
+ const host=match[1].split(':')[0].toLowerCase().replace(/^www\./,'');
+ return [...COMPETING_DIRECTORIES].some(domain=>host===domain||host.endsWith('.'+domain));
 }
 function removeCompetingDirectoryLinks(html){
  // Do not rewrite inline scripts/styles that happen to contain an HTML example.
