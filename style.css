@@ -205,3 +205,14 @@
 .ktv-disclosure p{margin:9px 0 0;font-size:13px}
 .ktv-deep-guide .ktv-pricing__source{font-size:12px;line-height:1.9}
 @media(max-width:680px){.ktv-deep-guide{padding:19px 13px}.ktv-note-grid{grid-template-columns:1fr}}
+
+/* Site-wide source-based karaoke venue guide */
+.ktv-venue-guide{background:#111925;border:1px solid #3a4657;padding:23px;border-radius:10px}
+.ktv-venue-guide h3{font-size:17px;color:#efd0a3;margin:21px 0 9px}
+.ktv-venue-info{display:grid;grid-template-columns:1.6fr 1fr;gap:10px;margin:16px 0}
+.ktv-venue-info p{margin:0;padding:11px 13px;border:1px solid #354356;border-radius:7px;background:#1b2635;color:#cad5df;font-size:12px;line-height:1.6}
+.ktv-venue-info strong{display:block;color:#dfb77b;font-size:11px;margin-bottom:3px}
+.ktv-venue-points{padding-left:21px;margin:13px 0 19px;color:#d1deeb;font-size:13px;line-height:1.9}
+.ktv-menu-table{min-width:570px!important}
+.ktv-venue-guide .ktv-pricing__source a{text-decoration:underline;color:#e6bd86}
+@media(max-width:600px){.ktv-venue-info{grid-template-columns:1fr}.ktv-venue-guide{padding:17px 13px}}
