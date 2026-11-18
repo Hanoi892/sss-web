@@ -19,6 +19,16 @@
  if(cover){const img=new Image();img.src=cover.url;img.alt=cover.alt||'여행 대표 사진';img.title=cover.title||'';img.decoding='async';img.fetchPriority='high';figure.querySelector('img')?.replaceWith(img);figure.classList.add('premium-managed');let view=figure.querySelector('.premium-visual__view');if(!view){view=document.createElement('button');view.type='button';view.className='premium-visual__view';view.textContent='사진 크게 보기 ↗';figure.append(view);}view.onclick=()=>zoom(cover);}
  else if(originalImage){figure.querySelector('img')?.replaceWith(originalImage.cloneNode(true));figure.classList.remove('premium-managed');figure.querySelector('.premium-visual__view')?.remove();}
  const extra=photos.filter(p=>p.slot===page+'#gallery').slice(0,24);gallery.replaceChildren(...extra.map(photoNode));gallery.hidden=!extra.length;if(empty)empty.hidden=extra.length>0;
+ for(const card of document.querySelectorAll('[data-premium-spot]')){
+  const base=page+'#spot-'+card.dataset.premiumSpot;
+  const head=photos.find(p=>p.slot===base+'-cover');
+  const related=photos.filter(p=>p.slot===base+'-gallery').slice(0,8);
+  const displayed=head||related[0]||null;
+  const picture=card.querySelector('[data-spot-picture]');
+  if(picture){picture.replaceChildren(...(displayed?[photoNode(displayed)]:[]));picture.hidden=!displayed;}
+  const mini=card.querySelector('[data-spot-mini]');
+  if(mini){const rest=related.filter(p=>p.id!==displayed?.id).slice(0,5);mini.replaceChildren(...rest.map(photoNode));mini.hidden=!rest.length;}
+ }
  }catch(err){console.warn('랜딩 사진을 불러오지 못했습니다.',err);}
  }
  sync();window.addEventListener('focus',sync);document.addEventListener('visibilitychange',sync);setInterval(sync,60000);
