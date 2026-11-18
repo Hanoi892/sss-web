@@ -216,3 +216,13 @@
 .ktv-menu-table{min-width:570px!important}
 .ktv-venue-guide .ktv-pricing__source a{text-decoration:underline;color:#e6bd86}
 @media(max-width:600px){.ktv-venue-info{grid-template-columns:1fr}.ktv-venue-guide{padding:17px 13px}}
+
+/* Representative photos must cover the entire media area (no blank band below tall venue cards). */
+.category-hub__media{position:relative;align-self:stretch;overflow:hidden}
+.category-hub__media>.picture.dbj-has-image{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;aspect-ratio:auto!important;padding:0!important}
+.category-hub__media>.picture.dbj-has-image>img{position:absolute!important;inset:0!important;display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+.picture.dbj-has-image,.related-venue-card__media.dbj-has-image,.thumb.dbj-has-image{overflow:hidden;padding:0!important}
+.picture.dbj-has-image>img,.related-venue-card__media.dbj-has-image>img,.thumb.dbj-has-image>img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+.picture.category-picture{position:relative}
+.hero-panel.guide-cover{position:relative}
+.picture.category-picture>img,.hero-panel.guide-cover>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center}
