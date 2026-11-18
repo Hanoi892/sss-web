@@ -165,3 +165,21 @@
 .category-hub__section .faq{max-width:1000px}
 @media(max-width:1060px){.category-hub__venues{grid-template-columns:1fr}.category-hub__areas{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.category-hub{padding-top:28px}.category-hub__index a{flex:1 1 27%;text-align:center}.category-hub__venue{grid-template-columns:106px minmax(0,1fr)}.category-hub__media,.category-hub__media .picture{min-height:145px}.category-hub__venuebody{padding:13px}.category-hub__venuebody h3{font-size:17px}.category-hub__venuebody>p{font-size:12px;line-height:1.75}.category-hub__venuebody dl div{grid-template-columns:40px minmax(0,1fr)}.category-hub__areas{grid-template-columns:1fr}}
+
+/* Karaoke 1–4 guest budget cards; pricing is informational, not a live quote. */
+.ktv-pricing{margin:28px 0;padding:23px 24px;background:#131b27;border:1px solid #354357;border-radius:10px;color:#eef1f7}
+.ktv-pricing__tag{display:inline-block;font-size:10px;letter-spacing:.11em;font-weight:800;color:#d9ac65;margin-bottom:7px}
+.ktv-pricing h2,.ktv-pricing h3{color:#f5f6fa;margin:3px 0 12px;font-size:clamp(18px,2vw,25px);line-height:1.35}
+.ktv-pricing__intro,.ktv-pricing__note,.ktv-pricing__source{font-size:13px;line-height:1.85;color:#afbece;margin:10px 0}
+.ktv-pricing__note{color:#d5c4a9}
+.ktv-pricing__source a,.ktv-pricing table a{color:#e5bd86;text-decoration:underline;text-underline-offset:3px}
+.ktv-pricing__scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.ktv-pricing table{width:100%;border-collapse:collapse;min-width:390px;font-size:13px;line-height:1.65}
+.ktv-pricing--hub table{min-width:780px}
+.ktv-pricing th,.ktv-pricing td{padding:11px 12px;border-bottom:1px solid #334152;text-align:left;vertical-align:top}
+.ktv-pricing thead th{background:#1d2938;color:#fff;font-weight:750;white-space:nowrap}
+.ktv-pricing tbody tr:last-child th,.ktv-pricing tbody tr:last-child td{border-bottom:0}
+.ktv-pricing tbody tr:hover{background:#1b2735}
+.ktv-pricing tbody td{color:#e0e6ed}
+.ktv-pricing .ktv-pricing__source{margin-bottom:0}
+@media(max-width:600px){.ktv-pricing{padding:17px 14px;margin:22px 0}.ktv-pricing table{font-size:12px}.ktv-pricing td,.ktv-pricing th{padding:9px}}
