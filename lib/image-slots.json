@@ -7762,5 +7762,41 @@
     "page": "/nhatrang/massage/vitamin-spa/",
     "label": "나트랑 비타민스파 · 추가 사진",
     "role": "gallery"
+  },
+  {
+    "id": "/golf/#cover",
+    "page": "/golf/",
+    "label": "베트남 골프 · 랜딩페이지 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#gallery",
+    "page": "/golf/",
+    "label": "베트남 골프 · 여행 사진 갤러리 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#cover",
+    "page": "/casino/",
+    "label": "베트남 카지노 · 랜딩페이지 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#gallery",
+    "page": "/casino/",
+    "label": "베트남 카지노 · 여행 사진 갤러리 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#cover",
+    "page": "/pool-villa/",
+    "label": "베트남 풀빌라 · 랜딩페이지 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#gallery",
+    "page": "/pool-villa/",
+    "label": "베트남 풀빌라 · 여행 사진 갤러리 (여러 장)",
+    "role": "gallery"
   }
 ]
