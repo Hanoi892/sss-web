@@ -1,3 +1,37 @@
+// Remove outbound links to competitor venue directories from published pages.
+// Keep venue facts and official venue websites; strip only competing-directory references.
+const COMPETING_DIRECTORIES=new Set(['vnbam365.com','vietbamso.com','vietroyaltour.kr','hanoiboom.com']);
+function isCompetingDirectoryAnchor(openingTag){
+ const href=openingTag.match(/\bhref\s*=\s*["']([^"']+)["']/i);
+ if(!href)return false;
+ try{
+  const host=new URL(href[1]).hostname.toLowerCase().replace(/^www\./,'');
+  return [...COMPETING_DIRECTORIES].some(domain=>host===domain||host.endsWith('.'+domain));
+ }catch{return false;}
+}
+function removeCompetingDirectoryLinks(html){
+ // Do not rewrite inline scripts/styles that happen to contain an HTML example.
+ const preserved=[];
+ html=html.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi,part=>{
+  const token='DBJPROTECTEDBLOCK'+preserved.length+'ZZ';
+  preserved.push(part);
+  return token;
+ });
+ html=html.replace(/<p\b([^>]*)>([\s\S]*?)<\/p>/gi,(whole,attrs,body)=>{
+  const outbound=[...body.matchAll(/<a\b[^>]*>/gi)].some(m=>isCompetingDirectoryAnchor(m[0]));
+  if(!outbound)return whole;
+  // References underneath articles are not reader-facing destination links.
+  const sourceParagraph=/\bclass\s*=\s*["'][^"']*\bsource\b/i.test(attrs)
+     ||/정보\s*출처|자료\s*출처|공개\s*정보\s*참고|출처\s*[:：]|대조\s*자료|원문\s*가격표|업소별[^<]{0,50}참고/i.test(body);
+  return sourceParagraph?'':whole;
+ });
+ html=html.replace(/<a\b[^>]*>[\s\S]*?<\/a>/gi,whole=>{
+  const tag=whole.slice(0,whole.indexOf('>')+1);
+  return isCompetingDirectoryAnchor(tag)?whole.slice(tag.length,-4):whole;
+ });
+ return html.replace(/DBJPROTECTEDBLOCK(\d+)ZZ/g,(_,index)=>preserved[Number(index)]);
+}
+
 function cleanText(text){
  if(/IMAGE.*ALT/s.test(text))return '사진 준비 중';
  const replacements=[
@@ -12,6 +46,7 @@ function cleanText(text){
  return text.replace(/\bIMAGE\s*·\s*ALT TEXT(?: READY)?\b/g,'사진 준비 중').replace(/^\s*IMAGE\s*$/g,'사진 준비 중').replace(/\bFAQ\b/g,'자주 묻는 질문');
 }
 function cleanPublicHtml(html){
+ html=removeCompetingDirectoryLinks(html);
  html=html.replace(/<p\b([^>]*)>([\s\S]*?)<\/p>/gi,(all,attrs,body)=>{
   if(/ALT|알트 문구|대체 텍스트|이미지 영역을 유지|빈 영역을 유지|이미지에 연결할 예정/.test(body)){
    const keep=body.split(/(?<=\.)\s*/).filter(sentence=>!/ALT|알트 문구|대체 텍스트|이미지 영역을 유지|빈 영역을 유지|이미지에 연결할 예정/.test(sentence));

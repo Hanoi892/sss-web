@@ -13,3 +13,19 @@ test('파일명 ALT만 업소 안내로 바꾸고 구체적인 설명은 유지'
  assert.equal(imageAlt(row,2),'다낭 벤츠 가라오케 상세 사진 2');
  assert.equal(imageAlt({...row,alt:'벤츠 가라오케 건물 입구'},2),'벤츠 가라오케 건물 입구');
 });
+
+test('경쟁 업소정보 사이트 출처 링크 제거, 업소 정보와 자체 링크·공식 사이트 보존',()=>{
+ const html='<main><p class="source">정보 출처: <a href="https://vnbam365.com/ho-chi-minh/venues/ho-chi-minh-102-karaoke/" target="_blank">업소 공개 소개 자료</a> · 2026년 기준</p><p class="source">공개 정보 참고: <a href="https://vietbamso.com/hanoi-sora-massage/">소라 마사지</a></p><p>가라오케 주소 <a href="https://www.hanoiboom.com/demo/">참고하기</a> / <a href="/hochiminh/karaoke/102/">동밤정 102 상세</a></p><p>공식 사이트 <a href="https://example-venue.vn/">매장 홈페이지</a></p></main>';
+ const output=cleanPublicHtml(html);
+ assert.ok(!/vnbam365|vietbamso|hanoiboom|정보 출처:|공개 정보 참고:/.test(output));
+ assert.ok(output.includes('가라오케 주소'));
+ assert.ok(output.includes('href="/hochiminh/karaoke/102/"'));
+ assert.ok(output.includes('href="https://example-venue.vn/"'));
+ assert.ok(!output.includes('<p class="source">'));
+});
+test('경쟁 사이트가 실린 스크립트 내용은 변형하지 않음',()=>{
+ const html='<script>const test="<a href=\\"https://vnbam365.com/test\\">a</a>";</script><p class="source"><a href="https://vnbam365.com/page">가져온 안내</a></p>';
+ const result=cleanPublicHtml(html);
+ assert.ok(result.includes('https://vnbam365.com/test'));
+ assert.ok(!result.includes('https://vnbam365.com/page'));
+});
