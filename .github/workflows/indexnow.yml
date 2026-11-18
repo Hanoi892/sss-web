@@ -24,5 +24,7 @@ jobs:
         with:
           fetch-depth: 2
           persist-credentials: false
+      - name: Validate IndexNow notifier syntax
+        run: node --check scripts/submit-indexnow.cjs
       - name: Notify Bing and Naver about changed public pages
         run: node scripts/submit-indexnow.cjs
