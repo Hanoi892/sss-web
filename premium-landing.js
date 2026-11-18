@@ -16,8 +16,8 @@
  try{const response=await fetch('/api/images?page='+encodeURIComponent(page),{cache:'no-store'});if(!response.ok)return;
  const data=await response.json();const photos=Array.isArray(data.images)?data.images:[],fingerprint=JSON.stringify(photos);if(last===fingerprint)return;last=fingerprint;
  const cover=photos.find(p=>p.slot===page+'#cover');
- if(cover){const img=new Image();img.src=cover.url;img.alt=cover.alt||'여행 대표 사진';img.title=cover.title||'';img.decoding='async';img.fetchPriority='high';figure.querySelector('img')?.replaceWith(img);figure.classList.add('premium-managed');}
- else if(originalImage){figure.querySelector('img')?.replaceWith(originalImage.cloneNode(true));figure.classList.remove('premium-managed');}
+ if(cover){const img=new Image();img.src=cover.url;img.alt=cover.alt||'여행 대표 사진';img.title=cover.title||'';img.decoding='async';img.fetchPriority='high';figure.querySelector('img')?.replaceWith(img);figure.classList.add('premium-managed');let view=figure.querySelector('.premium-visual__view');if(!view){view=document.createElement('button');view.type='button';view.className='premium-visual__view';view.textContent='사진 크게 보기 ↗';figure.append(view);}view.onclick=()=>zoom(cover);}
+ else if(originalImage){figure.querySelector('img')?.replaceWith(originalImage.cloneNode(true));figure.classList.remove('premium-managed');figure.querySelector('.premium-visual__view')?.remove();}
  const extra=photos.filter(p=>p.slot===page+'#gallery').slice(0,24);gallery.replaceChildren(...extra.map(photoNode));gallery.hidden=!extra.length;if(empty)empty.hidden=extra.length>0;
  }catch(err){console.warn('랜딩 사진을 불러오지 못했습니다.',err);}
  }
