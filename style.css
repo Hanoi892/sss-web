@@ -42,3 +42,5 @@
 
 /* Homepage industry illustrations */
 .picture.category-picture{height:auto;aspect-ratio:4/3;overflow:hidden}.picture.category-picture::after{display:none}.category-picture img{display:block;width:100%;height:100%;object-fit:cover}
+
+.hero-panel.guide-cover{margin:0;padding:0;overflow:hidden;aspect-ratio:4/3}.guide-cover img{display:block;width:100%;height:100%;object-fit:cover}
