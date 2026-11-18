@@ -12,7 +12,7 @@ async function api(path,body){const response=await fetch(path,{method:body?'POST
 function showLogin(initialized=true){$('manager').hidden=true;$('logout').hidden=true;$('login').hidden=false;$('setupHelp').hidden=initialized;$('loginHelp').textContent=initialized?'관리자 계정으로 로그인해 주세요.':'최초 관리자 계정을 설정해 주세요.';$('loginForm').querySelector('button').textContent=initialized?'로그인':'관리자 계정 만들기';if(!initialized&&!setupToken)notice('최초 관리자 설정 링크로 접속해 주세요.');}
 function options(select,filter=''){
  const selected=select.value;select.replaceChildren();
- for(const slot of slots.filter(x=>(x.label+' '+x.page).toLowerCase().includes(filter.toLowerCase()))){const option=el('option',slot.label);option.value=slot.id;select.append(option);}
+ for(const slot of slots.filter(x=>(select.id!=='uploadSlot'||x.role==='cover')).filter(x=>(x.label+' '+x.page).toLowerCase().includes(filter.toLowerCase()))){const option=el('option',slot.label);option.value=slot.id;select.append(option);}
  if([...select.options].some(o=>o.value===selected))select.value=selected;
 }
 async function load(){const data=await api('/api/images?admin=1');images=data.images;slots=data.slots;options($('uploadSlot'),$('slotSearch').value);options($('editSlot'));render();}
@@ -32,9 +32,10 @@ function queueStatus(){const count=queue.filter(x=>!x.done).length;$('queueCount
 function addFiles(files,target=null){
  if(uploading){notice('진행 중인 업로드가 끝난 뒤 사진을 추가해 주세요.');return;}
  if(queue.length+files.length>30){notice('한 번에 최대 30장을 선택해 주세요.');return;}
+ if(!target&&$('uploadRole').value==='cover'&&files.length>1){notice('대표 사진은 한 장만 선택해 주세요. 여러 장은 추가 사진을 선택해 주세요.');return;}
  for(const file of files){
   if(!/\.(jpe?g|png|webp|avif|hei[cf])$/i.test(file.name)||file.size>50*1048576||file.size<12){notice(`${file.name}: 지원 형식과 50MB 제한을 확인해 주세요.`);continue;}
-  const item={file,slot:target?.slot||$('uploadSlot').value,published:target?.published??$('uploadPublished').checked,replaceId:target?.id};
+  const item={file,slot:target?.slot||$('uploadSlot').value.replace(/#cover$/,'#'+$('uploadRole').value),published:target?.published??$('uploadPublished').checked,replaceId:target?.id||(!target&&$('uploadRole').value==='cover'?images.find(x=>x.slot===$('uploadSlot').value)?.id:undefined)};
   if(!item.slot){notice('사이트 반영 위치를 선택해 주세요.');continue;}
   const row=el('div',undefined,'queue-item'),preview=el('img');preview.alt='선택한 사진 미리보기';const url=URL.createObjectURL(file);preview.src=url;preview.onerror=()=>{preview.replaceWith(el('span','HEIC 미리보기는 변환 후 표시됩니다.','queue-placeholder'));};item.objectUrl=url;
   const info=el('div');info.append(el('strong',file.name),el('div',`${fmt(file.size)} · ${slots.find(s=>s.id===item.slot)?.label||item.slot}`,'status'));
@@ -51,7 +52,7 @@ function action(label,handler){const btn=el('button',label);btn.type='button';bt
 function render(){
  $('count').textContent=images.length+'장';$('total').textContent=fmt(images.reduce((n,x)=>n+Number(x.bytes),0));$('saved').textContent=fmt(images.reduce((n,x)=>n+Math.max(0,Number(x.original_bytes)-x.bytes),0));
  const q=$('filter').value.toLowerCase(),state=$('visibility').value;
- const filtered=images.filter(x=>(state==='all'||x.published===(state==='public'))&&[x.title,x.filename,slots.find(s=>s.id===x.slot)?.label,x.slot].join(' ').toLowerCase().includes(q));
+ const filtered=images.filter(x=>x.slot.split('#')[0]===$('uploadSlot').value.split('#')[0]).filter(x=>(state==='all'||x.published===(state==='public'))&&[x.title,x.filename,slots.find(s=>s.id===x.slot)?.label,x.slot].join(' ').toLowerCase().includes(q));
  $('empty').hidden=filtered.length>0;$('empty').textContent=images.length?'검색 결과가 없습니다.':'아직 등록된 사진이 없습니다. 첫 사진을 올려 보세요.';$('images').replaceChildren();
  for(const image of filtered){
   const card=el('article',undefined,'image-card');card.draggable=true;card.dataset.id=image.id;
@@ -77,3 +78,5 @@ $('changePassword').onclick=()=>$('passwordDialog').showModal();$('passwordForm'
 window.addEventListener('beforeunload',e=>{if(uploading){e.preventDefault();e.returnValue='';}});
 async function init(){try{const status=await api('/api/image-auth');if(!status.authenticated){showLogin(status.initialized);return;}$('login').hidden=true;$('manager').hidden=false;$('logout').hidden=false;await load();}catch(error){notice('관리자 시스템을 불러오지 못했습니다. '+error.message);}}
 init();
+
+$('uploadSlot').addEventListener('change',render);

@@ -56,6 +56,15 @@ test('실제 PostgreSQL 엔진을 사용하는 관리자 API 통합',async t=>{
  });
  await t.test('여러 장·목록 순서 변경',async()=>{const r=await upload(await fixture('green'));assert.equal(r.status,200);second=r.data.id;assert.equal((await request('images',{method:'POST',body:{action:'reorder',ids:[second,first]}})).status,200);assert.deepEqual((await request('images',{url:'/?admin=1'})).data.images.map(x=>x.id),[second,first]);});
  await t.test('공개 취소 후 URL 직접 접근 차단',async()=>{assert.equal((await request('images',{method:'POST',body:{action:'edit',id:first,title:'대표',alt:'설명',slot:'/hanoi/massage/amazing/#image-0',published:false}})).status,200);assert.equal((await request('file',{url:`/?id=${first}`,authenticated:false})).status,404);});
+ await t.test('업소 대표 사진은 카드 API에 자동 연결하고 추가 사진은 업소에 배정',async()=>{
+  for(const [id,slot] of [[first,'/hanoi/massage/amazing/#cover'],[second,'/hanoi/massage/amazing/#gallery']])assert.equal((await request('images',{method:'POST',body:{action:'edit',id,title:'업소 사진',alt:'업소 시설',slot,published:true}})).status,200);
+  const response=(await request('images',{url:'/?page=/hanoi/massage/amazing/',authenticated:false})).data;
+  assert.ok(response.images.some(x=>x.slot.endsWith('#gallery')));
+  assert.equal(response.representatives.find(x=>x.slot==='/hanoi/massage/amazing/#cover').id,first);
+  const cards=(await request('images',{url:'/?page=/hanoi/massage/',authenticated:false})).data;
+  assert.equal(cards.representatives.find(x=>x.id===first).alt,'업소 시설');
+  for(const id of [first,second])await request('images',{method:'POST',body:{action:'edit',id,title:'사진',alt:'사진',slot:'/hanoi/massage/amazing/#image-0',published:false}});
+ });
  await t.test('요청 위조 방지',async()=>{assert.equal((await request('images',{method:'POST',origin:'https://evil.test',body:{action:'delete',id:first}})).status,403);});
  await t.test('삭제 후 이미지 접근 차단 및 저장 파일 정리',async()=>{assert.equal((await request('images',{method:'POST',body:{action:'delete',id:second}})).status,200);assert.equal((await request('file',{url:`/?id=${second}`})).status,404);assert.equal([...objects.keys()].filter(x=>x.startsWith(OUTPUT)).length,1);});
  await t.test('비밀번호 변경 시 모든 세션 폐기',async()=>{assert.equal((await request('auth',{method:'POST',body:{action:'password',currentPassword:'1',password:'2'}})).status,200);assert.equal((await request('auth')).data.authenticated,false);});

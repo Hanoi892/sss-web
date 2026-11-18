@@ -2,6 +2,7 @@ const {query}=require('../lib/db.cjs');
 const s=require('../lib/security.cjs');
 const st=require('../lib/storage.cjs');
 const slots=require('../lib/image-slots.json');
+const venues=require('../lib/venues.json');
 const slotSet=new Set(slots.map(x=>x.id));
 module.exports=s.wrapper(async(req,res)=>{
  const u=new URL(req.url,'https://local');
@@ -9,12 +10,13 @@ module.exports=s.wrapper(async(req,res)=>{
    if(u.searchParams.get('admin')==='1'){
      await s.requireAdmin(req);
      const {rows}=await query('SELECT * FROM image_manager.images ORDER BY position,created_at');
-     return s.json(res,{images:rows.map(({path,source_hash,output_hash,...row})=>({...row,url:`/api/image-file?id=${row.id}&v=${row.version}`})),slots});
+     return s.json(res,{images:rows.map(({path,source_hash,output_hash,...row})=>({...row,url:`/api/image-file?id=${row.id}&v=${row.version}`})),slots,venues});
    }
    const page=u.searchParams.get('page');
    if(!slots.some(x=>x.page===page))return s.json(res,{images:[]});
    const {rows}=await query("SELECT id,title,alt,width,height,slot,version FROM image_manager.images WHERE published=true AND split_part(slot,'#',1)=$1 ORDER BY position,created_at",[page]);
-   return s.json(res,{images:rows.map(row=>({...row,url:`/api/image-file?id=${row.id}&v=${row.version}`}))});
+   const representatives=(await query("SELECT DISTINCT ON(slot) id,title,alt,width,height,slot,version FROM image_manager.images WHERE published=true AND slot LIKE '%#cover' ORDER BY slot,position,created_at")).rows;
+   return s.json(res,{images:rows.map(row=>({...row,url:`/api/image-file?id=${row.id}&v=${row.version}`})),representatives:representatives.map(row=>({...row,url:`/api/image-file?id=${row.id}&v=${row.version}`}))});
  }
  if(req.method!=='POST')s.fail(405,'지원하지 않는 요청입니다.');s.origin(req);await s.requireAdmin(req);const b=await s.body(req);
  if(b.action==='reorder'){

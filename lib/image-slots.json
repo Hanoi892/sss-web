@@ -2553,5 +2553,1253 @@
     "id": "/pool-villa/#image-7",
     "page": "/pool-villa/",
     "label": "베트남 풀빌라 프리미엄 가이드 · 관련 업소 사진 8 · 호치민 스타킹 마사지"
+  },
+  {
+    "id": "/danang/karaoke/audi/#cover",
+    "page": "/danang/karaoke/audi/",
+    "label": "다낭 아우디 가라오케 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/audi/#gallery",
+    "page": "/danang/karaoke/audi/",
+    "label": "다낭 아우디 가라오케 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/karaoke/benz/#cover",
+    "page": "/danang/karaoke/benz/",
+    "label": "다낭 벤츠 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/benz/#gallery",
+    "page": "/danang/karaoke/benz/",
+    "label": "다낭 벤츠 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/karaoke/bmw/#cover",
+    "page": "/danang/karaoke/bmw/",
+    "label": "다낭 BMW 가라오케 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/bmw/#gallery",
+    "page": "/danang/karaoke/bmw/",
+    "label": "다낭 BMW 가라오케 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/karaoke/eden/#cover",
+    "page": "/danang/karaoke/eden/",
+    "label": "다낭 에덴 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/eden/#gallery",
+    "page": "/danang/karaoke/eden/",
+    "label": "다낭 에덴 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/karaoke/junko/#cover",
+    "page": "/danang/karaoke/junko/",
+    "label": "다낭 준코 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/junko/#gallery",
+    "page": "/danang/karaoke/junko/",
+    "label": "다낭 준코 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/karaoke/newmin/#cover",
+    "page": "/danang/karaoke/newmin/",
+    "label": "다낭 뉴민 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/newmin/#gallery",
+    "page": "/danang/karaoke/newmin/",
+    "label": "다낭 뉴민 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/karaoke/one-opera/#cover",
+    "page": "/danang/karaoke/one-opera/",
+    "label": "다낭 오페라 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/one-opera/#gallery",
+    "page": "/danang/karaoke/one-opera/",
+    "label": "다낭 오페라 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/karaoke/unique/#cover",
+    "page": "/danang/karaoke/unique/",
+    "label": "다낭 유니크 가라오케 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/unique/#gallery",
+    "page": "/danang/karaoke/unique/",
+    "label": "다낭 유니크 가라오케 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/karaoke/uptown/#cover",
+    "page": "/danang/karaoke/uptown/",
+    "label": "다낭 업타운 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/karaoke/uptown/#gallery",
+    "page": "/danang/karaoke/uptown/",
+    "label": "다낭 업타운 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/323-massage/#cover",
+    "page": "/danang/massage/323-massage/",
+    "label": "다낭 323 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/323-massage/#gallery",
+    "page": "/danang/massage/323-massage/",
+    "label": "다낭 323 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/ankay-plus/#cover",
+    "page": "/danang/massage/ankay-plus/",
+    "label": "다낭 안케이플러스 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/ankay-plus/#gallery",
+    "page": "/danang/massage/ankay-plus/",
+    "label": "다낭 안케이플러스 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/apple-spa/#cover",
+    "page": "/danang/massage/apple-spa/",
+    "label": "다낭 애플스파 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/apple-spa/#gallery",
+    "page": "/danang/massage/apple-spa/",
+    "label": "다낭 애플스파 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/bean-spa/#cover",
+    "page": "/danang/massage/bean-spa/",
+    "label": "다낭 베안스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/bean-spa/#gallery",
+    "page": "/danang/massage/bean-spa/",
+    "label": "다낭 베안스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/blue-dragon/#cover",
+    "page": "/danang/massage/blue-dragon/",
+    "label": "다낭 청룡열차 마사지 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/blue-dragon/#gallery",
+    "page": "/danang/massage/blue-dragon/",
+    "label": "다낭 청룡열차 마사지 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/cats-spa/#cover",
+    "page": "/danang/massage/cats-spa/",
+    "label": "다낭 캐츠스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/cats-spa/#gallery",
+    "page": "/danang/massage/cats-spa/",
+    "label": "다낭 캐츠스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/don-quixote/#cover",
+    "page": "/danang/massage/don-quixote/",
+    "label": "다낭 돈키호테 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/don-quixote/#gallery",
+    "page": "/danang/massage/don-quixote/",
+    "label": "다낭 돈키호테 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/emperor-anma/#cover",
+    "page": "/danang/massage/emperor-anma/",
+    "label": "다낭 황제안마 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/emperor-anma/#gallery",
+    "page": "/danang/massage/emperor-anma/",
+    "label": "다낭 황제안마 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/fairy-spa/#cover",
+    "page": "/danang/massage/fairy-spa/",
+    "label": "다낭 요정스파 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/fairy-spa/#gallery",
+    "page": "/danang/massage/fairy-spa/",
+    "label": "다낭 요정스파 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/hoakieu-massage/#cover",
+    "page": "/danang/massage/hoakieu-massage/",
+    "label": "다낭 호아끼에우 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/hoakieu-massage/#gallery",
+    "page": "/danang/massage/hoakieu-massage/",
+    "label": "다낭 호아끼에우 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/jeil-barbershop/#cover",
+    "page": "/danang/massage/jeil-barbershop/",
+    "label": "다낭 제일이발관 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/jeil-barbershop/#gallery",
+    "page": "/danang/massage/jeil-barbershop/",
+    "label": "다낭 제일이발관 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/newlife-massage/#cover",
+    "page": "/danang/massage/newlife-massage/",
+    "label": "다낭 뉴라이프 스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/newlife-massage/#gallery",
+    "page": "/danang/massage/newlife-massage/",
+    "label": "다낭 뉴라이프 스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/on-spa/#cover",
+    "page": "/danang/massage/on-spa/",
+    "label": "다낭 온스파 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/on-spa/#gallery",
+    "page": "/danang/massage/on-spa/",
+    "label": "다낭 온스파 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/phong-thuy/#cover",
+    "page": "/danang/massage/phong-thuy/",
+    "label": "다낭 풍투이 스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/phong-thuy/#gallery",
+    "page": "/danang/massage/phong-thuy/",
+    "label": "다낭 풍투이 스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/red-swing/#cover",
+    "page": "/danang/massage/red-swing/",
+    "label": "다낭 빨간그네 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/red-swing/#gallery",
+    "page": "/danang/massage/red-swing/",
+    "label": "다낭 빨간그네 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/sakura/#cover",
+    "page": "/danang/massage/sakura/",
+    "label": "다낭 사쿠라 마사지 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/sakura/#gallery",
+    "page": "/danang/massage/sakura/",
+    "label": "다낭 사쿠라 마사지 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/su-sauna/#cover",
+    "page": "/danang/massage/su-sauna/",
+    "label": "다낭 수 사우나 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/su-sauna/#gallery",
+    "page": "/danang/massage/su-sauna/",
+    "label": "다낭 수 사우나 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/theking-spa/#cover",
+    "page": "/danang/massage/theking-spa/",
+    "label": "다낭 더킹스파 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/theking-spa/#gallery",
+    "page": "/danang/massage/theking-spa/",
+    "label": "다낭 더킹스파 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/danang/massage/vip-barbershop/#cover",
+    "page": "/danang/massage/vip-barbershop/",
+    "label": "다낭 VIP감성이발소 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/danang/massage/vip-barbershop/#gallery",
+    "page": "/danang/massage/vip-barbershop/",
+    "label": "다낭 VIP감성이발소 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/karaoke/bacchus/#cover",
+    "page": "/hanoi/karaoke/bacchus/",
+    "label": "하노이 박카스 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/karaoke/bacchus/#gallery",
+    "page": "/hanoi/karaoke/bacchus/",
+    "label": "하노이 박카스 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/karaoke/hangang/#cover",
+    "page": "/hanoi/karaoke/hangang/",
+    "label": "하노이 한강 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/karaoke/hangang/#gallery",
+    "page": "/hanoi/karaoke/hangang/",
+    "label": "하노이 한강 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/karaoke/hwangjini/#cover",
+    "page": "/hanoi/karaoke/hwangjini/",
+    "label": "하노이 황진이 가라오케 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/karaoke/hwangjini/#gallery",
+    "page": "/hanoi/karaoke/hwangjini/",
+    "label": "하노이 황진이 가라오케 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/karaoke/johnson/#cover",
+    "page": "/hanoi/karaoke/johnson/",
+    "label": "하노이 존슨 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/karaoke/johnson/#gallery",
+    "page": "/hanoi/karaoke/johnson/",
+    "label": "하노이 존슨 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/karaoke/the-red/#cover",
+    "page": "/hanoi/karaoke/the-red/",
+    "label": "하노이 더레드 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/karaoke/the-red/#gallery",
+    "page": "/hanoi/karaoke/the-red/",
+    "label": "하노이 더레드 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/karaoke/valentine/#cover",
+    "page": "/hanoi/karaoke/valentine/",
+    "label": "하노이 발렌타인 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/karaoke/valentine/#gallery",
+    "page": "/hanoi/karaoke/valentine/",
+    "label": "하노이 발렌타인 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/ace-barbershop/#cover",
+    "page": "/hanoi/massage/ace-barbershop/",
+    "label": "하노이 에이스 이발관 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/ace-barbershop/#gallery",
+    "page": "/hanoi/massage/ace-barbershop/",
+    "label": "하노이 에이스 이발관 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/amazing/#cover",
+    "page": "/hanoi/massage/amazing/",
+    "label": "하노이 어메이징 VIP 마사지 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/amazing/#gallery",
+    "page": "/hanoi/massage/amazing/",
+    "label": "하노이 어메이징 VIP 마사지 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/d-salon/#cover",
+    "page": "/hanoi/massage/d-salon/",
+    "label": "하노이 디살롱 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/d-salon/#gallery",
+    "page": "/hanoi/massage/d-salon/",
+    "label": "하노이 디살롱 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/gangnam-spa/#cover",
+    "page": "/hanoi/massage/gangnam-spa/",
+    "label": "하노이 강남스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/gangnam-spa/#gallery",
+    "page": "/hanoi/massage/gangnam-spa/",
+    "label": "하노이 강남스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/itaewon-barbershop/#cover",
+    "page": "/hanoi/massage/itaewon-barbershop/",
+    "label": "하노이 이태원 이발관 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/itaewon-barbershop/#gallery",
+    "page": "/hanoi/massage/itaewon-barbershop/",
+    "label": "하노이 이태원 이발관 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/lee-spa/#cover",
+    "page": "/hanoi/massage/lee-spa/",
+    "label": "하노이 리스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/lee-spa/#gallery",
+    "page": "/hanoi/massage/lee-spa/",
+    "label": "하노이 리스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/mister-spa/#cover",
+    "page": "/hanoi/massage/mister-spa/",
+    "label": "하노이 미스터스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/mister-spa/#gallery",
+    "page": "/hanoi/massage/mister-spa/",
+    "label": "하노이 미스터스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/moon/#cover",
+    "page": "/hanoi/massage/moon/",
+    "label": "하노이 문 마사지 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/moon/#gallery",
+    "page": "/hanoi/massage/moon/",
+    "label": "하노이 문 마사지 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/moon-spa/#cover",
+    "page": "/hanoi/massage/moon-spa/",
+    "label": "하노이 문스파(문 마사지) · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/moon-spa/#gallery",
+    "page": "/hanoi/massage/moon-spa/",
+    "label": "하노이 문스파(문 마사지) · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/mydinh-barbershop/#cover",
+    "page": "/hanoi/massage/mydinh-barbershop/",
+    "label": "하노이 미딩 이발소 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/mydinh-barbershop/#gallery",
+    "page": "/hanoi/massage/mydinh-barbershop/",
+    "label": "하노이 미딩 이발소 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/new-seoul-barbershop/#cover",
+    "page": "/hanoi/massage/new-seoul-barbershop/",
+    "label": "하노이 뉴서울이발관 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/new-seoul-barbershop/#gallery",
+    "page": "/hanoi/massage/new-seoul-barbershop/",
+    "label": "하노이 뉴서울이발관 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/oscar-massage/#cover",
+    "page": "/hanoi/massage/oscar-massage/",
+    "label": "하노이 오스카 마사지 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/oscar-massage/#gallery",
+    "page": "/hanoi/massage/oscar-massage/",
+    "label": "하노이 오스카 마사지 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/seoul-barbershop/#cover",
+    "page": "/hanoi/massage/seoul-barbershop/",
+    "label": "하노이 서울 이용원 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/seoul-barbershop/#gallery",
+    "page": "/hanoi/massage/seoul-barbershop/",
+    "label": "하노이 서울 이용원 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/sora/#cover",
+    "page": "/hanoi/massage/sora/",
+    "label": "하노이 소라 마사지 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/sora/#gallery",
+    "page": "/hanoi/massage/sora/",
+    "label": "하노이 소라 마사지 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/su-sauna/#cover",
+    "page": "/hanoi/massage/su-sauna/",
+    "label": "하노이 수 사우나 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/su-sauna/#gallery",
+    "page": "/hanoi/massage/su-sauna/",
+    "label": "하노이 수 사우나 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/sun-spa/#cover",
+    "page": "/hanoi/massage/sun-spa/",
+    "label": "하노이 썬스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/sun-spa/#gallery",
+    "page": "/hanoi/massage/sun-spa/",
+    "label": "하노이 썬스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hanoi/massage/sweet-lady/#cover",
+    "page": "/hanoi/massage/sweet-lady/",
+    "label": "하노이 스위트레이디 – 위치·시설 정보 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hanoi/massage/sweet-lady/#gallery",
+    "page": "/hanoi/massage/sweet-lady/",
+    "label": "하노이 스위트레이디 – 위치·시설 정보 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/karaoke/102/#cover",
+    "page": "/hochiminh/karaoke/102/",
+    "label": "호치민 102 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/karaoke/102/#gallery",
+    "page": "/hochiminh/karaoke/102/",
+    "label": "호치민 102 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/karaoke/arena/#cover",
+    "page": "/hochiminh/karaoke/arena/",
+    "label": "호치민 아레나 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/karaoke/arena/#gallery",
+    "page": "/hochiminh/karaoke/arena/",
+    "label": "호치민 아레나 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/karaoke/aurora/#cover",
+    "page": "/hochiminh/karaoke/aurora/",
+    "label": "호치민 오로라 가라오케 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/karaoke/aurora/#gallery",
+    "page": "/hochiminh/karaoke/aurora/",
+    "label": "호치민 오로라 가라오케 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/karaoke/boss/#cover",
+    "page": "/hochiminh/karaoke/boss/",
+    "label": "호치민 보스 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/karaoke/boss/#gallery",
+    "page": "/hochiminh/karaoke/boss/",
+    "label": "호치민 보스 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/karaoke/dubai/#cover",
+    "page": "/hochiminh/karaoke/dubai/",
+    "label": "호치민 두바이 가라오케 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/karaoke/dubai/#gallery",
+    "page": "/hochiminh/karaoke/dubai/",
+    "label": "호치민 두바이 가라오케 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/karaoke/number-one/#cover",
+    "page": "/hochiminh/karaoke/number-one/",
+    "label": "호치민 넘버원 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/karaoke/number-one/#gallery",
+    "page": "/hochiminh/karaoke/number-one/",
+    "label": "호치민 넘버원 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/karaoke/one-two/#cover",
+    "page": "/hochiminh/karaoke/one-two/",
+    "label": "호치민 원투 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/karaoke/one-two/#gallery",
+    "page": "/hochiminh/karaoke/one-two/",
+    "label": "호치민 원투 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/karaoke/the-one/#cover",
+    "page": "/hochiminh/karaoke/the-one/",
+    "label": "호치민 더 원 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/karaoke/the-one/#gallery",
+    "page": "/hochiminh/karaoke/the-one/",
+    "label": "호치민 더 원 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/angel-barbershop/#cover",
+    "page": "/hochiminh/massage/angel-barbershop/",
+    "label": "호치민 엔젤 이발소 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/angel-barbershop/#gallery",
+    "page": "/hochiminh/massage/angel-barbershop/",
+    "label": "호치민 엔젤 이발소 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/che-on-spa/#cover",
+    "page": "/hochiminh/massage/che-on-spa/",
+    "label": "호치민 체온스파 38.5 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/che-on-spa/#gallery",
+    "page": "/hochiminh/massage/che-on-spa/",
+    "label": "호치민 체온스파 38.5 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/coco-spa/#cover",
+    "page": "/hochiminh/massage/coco-spa/",
+    "label": "호치민 코코 스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/coco-spa/#gallery",
+    "page": "/hochiminh/massage/coco-spa/",
+    "label": "호치민 코코 스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/dodo-spa/#cover",
+    "page": "/hochiminh/massage/dodo-spa/",
+    "label": "호치민 도도 스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/dodo-spa/#gallery",
+    "page": "/hochiminh/massage/dodo-spa/",
+    "label": "호치민 도도 스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/durian-spa/#cover",
+    "page": "/hochiminh/massage/durian-spa/",
+    "label": "호치민 두리안 마사지 &amp; 스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/durian-spa/#gallery",
+    "page": "/hochiminh/massage/durian-spa/",
+    "label": "호치민 두리안 마사지 &amp; 스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/emperor-barbershop/#cover",
+    "page": "/hochiminh/massage/emperor-barbershop/",
+    "label": "호치민 황제이발관 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/emperor-barbershop/#gallery",
+    "page": "/hochiminh/massage/emperor-barbershop/",
+    "label": "호치민 황제이발관 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/friendship-barbershop/#cover",
+    "page": "/hochiminh/massage/friendship-barbershop/",
+    "label": "호치민 우정 이발소 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/friendship-barbershop/#gallery",
+    "page": "/hochiminh/massage/friendship-barbershop/",
+    "label": "호치민 우정 이발소 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/gold-massage/#cover",
+    "page": "/hochiminh/massage/gold-massage/",
+    "label": "호치민 골드 마사지 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/gold-massage/#gallery",
+    "page": "/hochiminh/massage/gold-massage/",
+    "label": "호치민 골드 마사지 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/golden-king-spa/#cover",
+    "page": "/hochiminh/massage/golden-king-spa/",
+    "label": "호치민 골든킹 스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/golden-king-spa/#gallery",
+    "page": "/hochiminh/massage/golden-king-spa/",
+    "label": "호치민 골든킹 스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/hotstone-massage/#cover",
+    "page": "/hochiminh/massage/hotstone-massage/",
+    "label": "호치민 핫스톤 마사지 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/hotstone-massage/#gallery",
+    "page": "/hochiminh/massage/hotstone-massage/",
+    "label": "호치민 핫스톤 마사지 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/kingstone/#cover",
+    "page": "/hochiminh/massage/kingstone/",
+    "label": "호치민 킹스톤 마사지 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/kingstone/#gallery",
+    "page": "/hochiminh/massage/kingstone/",
+    "label": "호치민 킹스톤 마사지 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/linh-cherry/#cover",
+    "page": "/hochiminh/massage/linh-cherry/",
+    "label": "호치민 린체리 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/linh-cherry/#gallery",
+    "page": "/hochiminh/massage/linh-cherry/",
+    "label": "호치민 린체리 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/may-spa/#cover",
+    "page": "/hochiminh/massage/may-spa/",
+    "label": "호치민 메이 스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/may-spa/#gallery",
+    "page": "/hochiminh/massage/may-spa/",
+    "label": "호치민 메이 스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/nganha-barbershop/#cover",
+    "page": "/hochiminh/massage/nganha-barbershop/",
+    "label": "호치민 응안하 이발소 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/nganha-barbershop/#gallery",
+    "page": "/hochiminh/massage/nganha-barbershop/",
+    "label": "호치민 응안하 이발소 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/phong-thuy/#cover",
+    "page": "/hochiminh/massage/phong-thuy/",
+    "label": "호치민 풍투이 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/phong-thuy/#gallery",
+    "page": "/hochiminh/massage/phong-thuy/",
+    "label": "호치민 풍투이 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/royal-barbershop/#cover",
+    "page": "/hochiminh/massage/royal-barbershop/",
+    "label": "호치민 로얄 이발소 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/royal-barbershop/#gallery",
+    "page": "/hochiminh/massage/royal-barbershop/",
+    "label": "호치민 로얄 이발소 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/stocking/#cover",
+    "page": "/hochiminh/massage/stocking/",
+    "label": "호치민 스타킹 마사지 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/stocking/#gallery",
+    "page": "/hochiminh/massage/stocking/",
+    "label": "호치민 스타킹 마사지 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/strawberry-spa/#cover",
+    "page": "/hochiminh/massage/strawberry-spa/",
+    "label": "호치민 딸기 때밀이 스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/strawberry-spa/#gallery",
+    "page": "/hochiminh/massage/strawberry-spa/",
+    "label": "호치민 딸기 때밀이 스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/superman-massage/#cover",
+    "page": "/hochiminh/massage/superman-massage/",
+    "label": "호치민 슈퍼맨 마사지 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/superman-massage/#gallery",
+    "page": "/hochiminh/massage/superman-massage/",
+    "label": "호치민 슈퍼맨 마사지 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/vien-dong/#cover",
+    "page": "/hochiminh/massage/vien-dong/",
+    "label": "호치민 비엔동 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/vien-dong/#gallery",
+    "page": "/hochiminh/massage/vien-dong/",
+    "label": "호치민 비엔동 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/windy/#cover",
+    "page": "/hochiminh/massage/windy/",
+    "label": "호치민 윈디 마사지 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/windy/#gallery",
+    "page": "/hochiminh/massage/windy/",
+    "label": "호치민 윈디 마사지 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/windy2/#cover",
+    "page": "/hochiminh/massage/windy2/",
+    "label": "호치민 윈디2 마사지 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/windy2/#gallery",
+    "page": "/hochiminh/massage/windy2/",
+    "label": "호치민 윈디2 마사지 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/hochiminh/massage/yuri-massage/#cover",
+    "page": "/hochiminh/massage/yuri-massage/",
+    "label": "호치민 유리 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/hochiminh/massage/yuri-massage/#gallery",
+    "page": "/hochiminh/massage/yuri-massage/",
+    "label": "호치민 유리 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/anova/#cover",
+    "page": "/nhatrang/karaoke/anova/",
+    "label": "나트랑 아노바 가라오케 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/anova/#gallery",
+    "page": "/nhatrang/karaoke/anova/",
+    "label": "나트랑 아노바 가라오케 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/avatar/#cover",
+    "page": "/nhatrang/karaoke/avatar/",
+    "label": "나트랑 아바타 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/avatar/#gallery",
+    "page": "/nhatrang/karaoke/avatar/",
+    "label": "나트랑 아바타 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/dubai/#cover",
+    "page": "/nhatrang/karaoke/dubai/",
+    "label": "나트랑 두바이 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/dubai/#gallery",
+    "page": "/nhatrang/karaoke/dubai/",
+    "label": "나트랑 두바이 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/galina/#cover",
+    "page": "/nhatrang/karaoke/galina/",
+    "label": "나트랑 갈리나 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/galina/#gallery",
+    "page": "/nhatrang/karaoke/galina/",
+    "label": "나트랑 갈리나 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/kingdom/#cover",
+    "page": "/nhatrang/karaoke/kingdom/",
+    "label": "나트랑 킹덤 가라오케 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/kingdom/#gallery",
+    "page": "/nhatrang/karaoke/kingdom/",
+    "label": "나트랑 킹덤 가라오케 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/liberty/#cover",
+    "page": "/nhatrang/karaoke/liberty/",
+    "label": "나트랑 리버티 가라오케 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/liberty/#gallery",
+    "page": "/nhatrang/karaoke/liberty/",
+    "label": "나트랑 리버티 가라오케 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/master/#cover",
+    "page": "/nhatrang/karaoke/master/",
+    "label": "나트랑 마스터 가라오케 – 지역·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/master/#gallery",
+    "page": "/nhatrang/karaoke/master/",
+    "label": "나트랑 마스터 가라오케 – 지역·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/quinter/#cover",
+    "page": "/nhatrang/karaoke/quinter/",
+    "label": "나트랑 퀸터 가라오케 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/quinter/#gallery",
+    "page": "/nhatrang/karaoke/quinter/",
+    "label": "나트랑 퀸터 가라오케 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/karaoke/quoc-te/#cover",
+    "page": "/nhatrang/karaoke/quoc-te/",
+    "label": "나트랑 쿡테 가라오케 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/karaoke/quoc-te/#gallery",
+    "page": "/nhatrang/karaoke/quoc-te/",
+    "label": "나트랑 쿡테 가라오케 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/cherry-spa/#cover",
+    "page": "/nhatrang/massage/cherry-spa/",
+    "label": "나트랑 체리스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/cherry-spa/#gallery",
+    "page": "/nhatrang/massage/cherry-spa/",
+    "label": "나트랑 체리스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/cloud-nine/#cover",
+    "page": "/nhatrang/massage/cloud-nine/",
+    "label": "나트랑 클라우드 나인 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/cloud-nine/#gallery",
+    "page": "/nhatrang/massage/cloud-nine/",
+    "label": "나트랑 클라우드 나인 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/dubai/#cover",
+    "page": "/nhatrang/massage/dubai/",
+    "label": "나트랑 두바이 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/dubai/#gallery",
+    "page": "/nhatrang/massage/dubai/",
+    "label": "나트랑 두바이 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/emperor-spa/#cover",
+    "page": "/nhatrang/massage/emperor-spa/",
+    "label": "나트랑 황제스파 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/emperor-spa/#gallery",
+    "page": "/nhatrang/massage/emperor-spa/",
+    "label": "나트랑 황제스파 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/hoa-da-4/#cover",
+    "page": "/nhatrang/massage/hoa-da-4/",
+    "label": "나트랑 화다4 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/hoa-da-4/#gallery",
+    "page": "/nhatrang/massage/hoa-da-4/",
+    "label": "나트랑 화다4 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/hoa-dau/#cover",
+    "page": "/nhatrang/massage/hoa-dau/",
+    "label": "나트랑 화다우 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/hoa-dau/#gallery",
+    "page": "/nhatrang/massage/hoa-dau/",
+    "label": "나트랑 화다우 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/new-queen/#cover",
+    "page": "/nhatrang/massage/new-queen/",
+    "label": "나트랑 뉴퀸 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/new-queen/#gallery",
+    "page": "/nhatrang/massage/new-queen/",
+    "label": "나트랑 뉴퀸 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/now-spa/#cover",
+    "page": "/nhatrang/massage/now-spa/",
+    "label": "나트랑 나우스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/now-spa/#gallery",
+    "page": "/nhatrang/massage/now-spa/",
+    "label": "나트랑 나우스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/quinter/#cover",
+    "page": "/nhatrang/massage/quinter/",
+    "label": "나트랑 퀸터 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/quinter/#gallery",
+    "page": "/nhatrang/massage/quinter/",
+    "label": "나트랑 퀸터 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/quoc-te/#cover",
+    "page": "/nhatrang/massage/quoc-te/",
+    "label": "나트랑 쿡테 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/quoc-te/#gallery",
+    "page": "/nhatrang/massage/quoc-te/",
+    "label": "나트랑 쿡테 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/sakura/#cover",
+    "page": "/nhatrang/massage/sakura/",
+    "label": "나트랑 사쿠라 마사지 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/sakura/#gallery",
+    "page": "/nhatrang/massage/sakura/",
+    "label": "나트랑 사쿠라 마사지 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/tokyo/#cover",
+    "page": "/nhatrang/massage/tokyo/",
+    "label": "나트랑 도쿄마사지 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/tokyo/#gallery",
+    "page": "/nhatrang/massage/tokyo/",
+    "label": "나트랑 도쿄마사지 · 추가 사진",
+    "role": "gallery"
+  },
+  {
+    "id": "/nhatrang/massage/vitamin-spa/#cover",
+    "page": "/nhatrang/massage/vitamin-spa/",
+    "label": "나트랑 비타민스파 – 위치·시설 안내 · 대표 사진",
+    "role": "cover"
+  },
+  {
+    "id": "/nhatrang/massage/vitamin-spa/#gallery",
+    "page": "/nhatrang/massage/vitamin-spa/",
+    "label": "나트랑 비타민스파 – 위치·시설 안내 · 추가 사진",
+    "role": "gallery"
   }
 ]
