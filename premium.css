@@ -98,3 +98,53 @@
 
 /* Explicitly honor the empty gallery's hidden state after photos are uploaded. */
 .premium-page .gallery-empty[hidden],.premium-page .premium-gallery[hidden]{display:none!important}
+
+
+/* Real venue directories: region-first navigation and property-level details */
+.premium-page .directory-stats{display:flex;align-items:center;gap:27px;padding:20px 25px;margin:24px 0 32px;background:#1b2631;border:1px solid #3d4754;border-left:3px solid #d7b27d}
+.premium-page .directory-stats strong{font-size:30px;color:#eacb9a;line-height:1;white-space:nowrap;display:flex;align-items:baseline;gap:8px}
+.premium-page .directory-stats strong small{font-size:11px;font-weight:600;color:#b4c0d0;letter-spacing:0}
+.premium-page .directory-stats p{font-size:12px;color:#b9c4d0;line-height:1.7;margin:0 0 0 auto;max-width:630px}
+.premium-page .venue-jump{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:46px}
+.premium-page .venue-jump a{display:inline-flex;gap:9px;align-items:center;border:1px solid #4b5360;padding:11px 15px;border-radius:5px;font-size:12px;font-weight:800;background:#202936;color:#f1e5d0}
+.premium-page .venue-jump a span{color:#d7b481;font-size:10px;letter-spacing:1px}
+.premium-page .venue-jump a small{font-size:10px;padding:1px 7px;border-radius:30px;background:#344054;color:#cfd6df}
+.premium-page .venue-jump a:hover{border-color:#e5c187;background:#293344}
+.premium-page .venue-region{scroll-margin-top:145px;margin:0 0 59px}
+.premium-page .venue-region+.venue-region{padding-top:42px;border-top:1px solid #3b4755}
+.premium-page .venue-region__heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.95fr);gap:24px;align-items:end;margin:0 0 19px}
+.premium-page .venue-region__eyebrow{font-size:11px;letter-spacing:2.6px;font-weight:800;color:#dbb880}
+.premium-page .venue-region__heading h3{font-size:clamp(25px,3vw,33px);color:#f8f3e9;line-height:1.4;margin:4px 0 0;letter-spacing:-1px}
+.premium-page .venue-region__heading h3 small{font-size:12px;display:inline-block;vertical-align:middle;color:#d9b680;border:1px solid #706149;border-radius:50px;padding:3px 10px;letter-spacing:0;margin-left:8px}
+.premium-page .venue-region__heading p{color:#aeb8c8;font-size:13px;line-height:1.9;margin:0;max-width:570px}
+.premium-page .spot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;align-items:stretch}
+.premium-page .spot-card{border:1px solid #364252;background:linear-gradient(155deg,#222c39,#171f29 58%,#161e27);min-width:0;display:flex;flex-direction:column;border-radius:7px;overflow:hidden;transition:transform .2s,border-color .2s;position:relative}
+.premium-page .spot-card:before{position:absolute;content:'';width:67px;height:3px;left:24px;top:0;background:#b79663}
+.premium-page .spot-card:hover{transform:translateY(-3px);border-color:#b79c74}
+.premium-page .spot-card__body{padding:25px 23px 23px;display:flex;flex-direction:column;flex:1;min-height:0}
+.premium-page .spot-card__meta{display:flex;align-items:center;justify-content:space-between;font-size:10px;color:#d8b884;letter-spacing:1.6px;font-weight:800}
+.premium-page .spot-card h4{font-size:21px;color:#f8f2e8;letter-spacing:-.6px;line-height:1.45;margin:14px 0 0}
+.premium-page .spot-card__en{font-size:11px;color:#95a3b5;margin:2px 0 13px;line-height:1.65}
+.premium-page .spot-card__loc{color:#e1c698;font-size:12px;font-weight:800;margin:0 0 12px}
+.premium-page .spot-card__desc{color:#b8c3ce;font-size:13px;line-height:1.88;margin:0 0 15px;flex:1}
+.premium-page .spot-card__facts{border-top:1px solid #384554;border-bottom:1px solid #384554;padding:12px 0;display:grid;gap:8px}
+.premium-page .spot-card__facts div{display:grid;grid-template-columns:78px minmax(0,1fr);gap:12px;font-size:11px;align-items:start}
+.premium-page .spot-card__facts span{color:#8596a9}
+.premium-page .spot-card__facts strong{color:#ced6df;font-weight:600;line-height:1.6}
+.premium-page .spot-card__footer{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:17px}
+.premium-page .spot-card__footer a{color:#ecc991;font-size:12px;font-weight:800}
+.premium-page .spot-card__footer a:hover{text-decoration:underline}
+.premium-page .spot-card__footer span{font-size:10px;color:#899bab}
+.premium-page .spot-card__picture{background:#1c2733;aspect-ratio:16/9;position:relative;overflow:hidden;border-bottom:1px solid #3a4858}
+.premium-page .spot-card__picture[hidden],.premium-page .spot-card__mini[hidden]{display:none!important}
+.premium-page .spot-card__picture button{display:block;position:relative;appearance:none;border:0;padding:0;background:transparent;cursor:zoom-in;width:100%;height:100%}
+.premium-page .spot-card__picture img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .2s}
+.premium-page .spot-card__picture button:hover img{transform:scale(1.025)}
+.premium-page .spot-card__picture button:after{content:'크게 보기 ↗';font-size:10px;font-weight:700;position:absolute;right:9px;bottom:9px;padding:5px 9px;border-radius:4px;color:#fff;background:#0e1520bb}
+.premium-page .spot-card__mini{display:flex;gap:5px;margin-top:14px}
+.premium-page .spot-card__mini button{appearance:none;padding:0;border:1px solid #4b5662;border-radius:4px;overflow:hidden;cursor:zoom-in;width:56px;height:46px;background:#29303a}
+.premium-page .spot-card__mini img{width:100%;height:100%;object-fit:cover;display:block}
+.premium-page .spot-card__mini button:hover{border-color:#e9bc7f}
+@media(max-width:1060px){.premium-page .spot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:780px){.premium-page .venue-region__heading{grid-template-columns:1fr;gap:6px}.premium-page .directory-stats{flex-wrap:wrap;gap:13px}.premium-page .directory-stats p{width:100%;max-width:none}}
+@media(max-width:590px){.premium-page .spot-grid{grid-template-columns:1fr}.premium-page .spot-card__body{padding:23px 20px}.premium-page .venue-region{scroll-margin-top:95px;margin-bottom:45px}.premium-page .venue-jump{gap:8px}.premium-page .venue-jump a{padding:9px 10px;font-size:11px}.premium-page .directory-stats strong{font-size:26px}.premium-page .venue-region__heading h3{font-size:25px}}
