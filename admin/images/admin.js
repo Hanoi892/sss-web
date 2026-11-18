@@ -1,11 +1,12 @@
 'use strict';
 const $=id=>document.getElementById(id);
 let images=[],slots=[],queue=[],replaceTarget=null,uploading=false,dragged=null;
-let setupToken=new URLSearchParams(location.hash.slice(1)).get('setup')||'';
+let setupToken=new URLSearchParams(location.hash.slice(1)).get('setup')||sessionStorage.getItem('dbj_setup')||'';
+if(setupToken)sessionStorage.setItem('dbj_setup',setupToken);
 if(location.hash)history.replaceState(null,'',location.pathname);
 const fmt=n=>{n=Number(n);return n>=1048576?(n/1048576).toFixed(2)+' MB':(n/1024).toFixed(1)+' KB';};
-const notice=message=>{$('notice').textContent=message;};
-window.addEventListener('hashchange',()=>{const token=new URLSearchParams(location.hash.slice(1)).get('setup');if(token){setupToken=token;history.replaceState(null,'',location.pathname);notice('최초 관리자 아이디와 비밀번호를 설정해 주세요.');}});
+const notice=message=>{$('notice').textContent=message;const local=document.getElementById('loginError');if(local)local.textContent=message;};
+window.addEventListener('hashchange',()=>{const token=new URLSearchParams(location.hash.slice(1)).get('setup');if(token){setupToken=token;sessionStorage.setItem('dbj_setup',token);history.replaceState(null,'',location.pathname);notice('최초 관리자 아이디와 비밀번호를 설정해 주세요.');}});
 function el(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;}
 async function api(path,body){const response=await fetch(path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined,cache:'no-store'});const data=await response.json();if(!response.ok){if(response.status===401&&!path.includes('image-auth'))showLogin();throw new Error(data.error||'처리에 실패했습니다.');}return data;}
 function showLogin(initialized=true){$('manager').hidden=true;$('logout').hidden=true;$('login').hidden=false;$('setupHelp').hidden=initialized;$('loginHelp').textContent=initialized?'관리자 계정으로 로그인해 주세요.':'최초 관리자 계정을 설정해 주세요.';$('loginForm').querySelector('button').textContent=initialized?'로그인':'관리자 계정 만들기';if(!initialized&&!setupToken)notice('최초 관리자 설정 링크로 접속해 주세요.');}
@@ -64,7 +65,7 @@ function render(){
  }
 }
 async function move(id,index){if(uploading)return;const from=images.findIndex(x=>x.id===id);if(index<0||index>=images.length||from===index)return;const ordered=[...images];ordered.splice(index,0,...ordered.splice(from,1));await api('/api/images',{action:'reorder',ids:ordered.map(x=>x.id)});await load();}
-$('loginForm').onsubmit=async e=>{e.preventDefault();const button=e.submitter;button.disabled=true;try{await api('/api/image-auth',{username:$('username').value,password:$('password').value,setupToken});setupToken='';$('password').value='';await init();notice('로그인했습니다.');}catch(error){notice(error.message);}finally{button.disabled=false;}};
+$('loginForm').onsubmit=async e=>{e.preventDefault();const button=e.submitter;button.disabled=true;try{await api('/api/image-auth',{username:$('username').value,password:$('password').value,setupToken});setupToken='';sessionStorage.removeItem('dbj_setup');$('password').value='';await init();notice('로그인했습니다.');}catch(error){notice(error.message);}finally{button.disabled=false;}};
 $('logout').onclick=async()=>{try{await api('/api/image-auth',{action:'logout'});showLogin();notice('로그아웃했습니다.');}catch(error){notice(error.message);}};
 $('files').onchange=e=>addFiles([...e.target.files]);$('replaceFile').onchange=e=>{if(e.target.files[0]){addFiles([e.target.files[0]],replaceTarget);$('queue').scrollIntoView({behavior:'smooth',block:'center'});}e.target.value='';replaceTarget=null;};
 for(const type of ['dragenter','dragover'])$('drop').addEventListener(type,e=>{e.preventDefault();$('drop').classList.add('dragover');});for(const type of ['dragleave','drop'])$('drop').addEventListener(type,e=>{e.preventDefault();$('drop').classList.remove('dragover');});$('drop').addEventListener('drop',e=>addFiles([...e.dataTransfer.files]));
