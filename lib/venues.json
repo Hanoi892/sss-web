@@ -72,10 +72,28 @@
     "gallery": "/danang/massage/sakura/#gallery"
   },
   {
+    "page": "/hanoi/karaoke/bacchus/",
+    "label": "하노이 박카스 가라오케",
+    "cover": "/hanoi/karaoke/bacchus/#cover",
+    "gallery": "/hanoi/karaoke/bacchus/#gallery"
+  },
+  {
     "page": "/hanoi/karaoke/hangang/",
     "label": "하노이 한강 가라오케",
     "cover": "/hanoi/karaoke/hangang/#cover",
     "gallery": "/hanoi/karaoke/hangang/#gallery"
+  },
+  {
+    "page": "/hanoi/karaoke/kingdom/",
+    "label": "하노이 킹덤 가라오케",
+    "cover": "/hanoi/karaoke/kingdom/#cover",
+    "gallery": "/hanoi/karaoke/kingdom/#gallery"
+  },
+  {
+    "page": "/hanoi/karaoke/london/",
+    "label": "하노이 런던 가라오케",
+    "cover": "/hanoi/karaoke/london/#cover",
+    "gallery": "/hanoi/karaoke/london/#gallery"
   },
   {
     "page": "/hanoi/karaoke/the-red/",
@@ -90,10 +108,28 @@
     "gallery": "/hanoi/karaoke/valentine/#gallery"
   },
   {
+    "page": "/hanoi/karaoke/vpop/",
+    "label": "하노이 VPOP(브이팝) 가라오케",
+    "cover": "/hanoi/karaoke/vpop/#cover",
+    "gallery": "/hanoi/karaoke/vpop/#gallery"
+  },
+  {
+    "page": "/hanoi/karaoke/vvs/",
+    "label": "하노이 VVS 가라오케",
+    "cover": "/hanoi/karaoke/vvs/#cover",
+    "gallery": "/hanoi/karaoke/vvs/#gallery"
+  },
+  {
     "page": "/hanoi/massage/amazing/",
     "label": "하노이 어메이징 VIP 마사지",
     "cover": "/hanoi/massage/amazing/#cover",
     "gallery": "/hanoi/massage/amazing/#gallery"
+  },
+  {
+    "page": "/hanoi/massage/barber12/",
+    "label": "하노이 바버12",
+    "cover": "/hanoi/massage/barber12/#cover",
+    "gallery": "/hanoi/massage/barber12/#gallery"
   },
   {
     "page": "/hanoi/massage/d-salon/",
@@ -126,6 +162,18 @@
     "gallery": "/hanoi/massage/moon-spa/#gallery"
   },
   {
+    "page": "/hanoi/massage/sora/",
+    "label": "하노이 소라 마사지",
+    "cover": "/hanoi/massage/sora/#cover",
+    "gallery": "/hanoi/massage/sora/#gallery"
+  },
+  {
+    "page": "/hanoi/massage/su-sauna/",
+    "label": "하노이 수 사우나",
+    "cover": "/hanoi/massage/su-sauna/#cover",
+    "gallery": "/hanoi/massage/su-sauna/#gallery"
+  },
+  {
     "page": "/hanoi/massage/sun-spa/",
     "label": "하노이 썬스파",
     "cover": "/hanoi/massage/sun-spa/#cover",
@@ -138,10 +186,52 @@
     "gallery": "/hochiminh/karaoke/102/#gallery"
   },
   {
+    "page": "/hochiminh/karaoke/aurora/",
+    "label": "호치민 오로라 가라오케",
+    "cover": "/hochiminh/karaoke/aurora/#cover",
+    "gallery": "/hochiminh/karaoke/aurora/#gallery"
+  },
+  {
     "page": "/hochiminh/karaoke/boss/",
     "label": "호치민 보스 가라오케",
     "cover": "/hochiminh/karaoke/boss/#cover",
     "gallery": "/hochiminh/karaoke/boss/#gallery"
+  },
+  {
+    "page": "/hochiminh/karaoke/dubai/",
+    "label": "호치민 두바이 가라오케",
+    "cover": "/hochiminh/karaoke/dubai/#cover",
+    "gallery": "/hochiminh/karaoke/dubai/#gallery"
+  },
+  {
+    "page": "/hochiminh/karaoke/number-one/",
+    "label": "호치민 넘버원 가라오케",
+    "cover": "/hochiminh/karaoke/number-one/#cover",
+    "gallery": "/hochiminh/karaoke/number-one/#gallery"
+  },
+  {
+    "page": "/hochiminh/karaoke/one-two/",
+    "label": "호치민 원투 가라오케",
+    "cover": "/hochiminh/karaoke/one-two/#cover",
+    "gallery": "/hochiminh/karaoke/one-two/#gallery"
+  },
+  {
+    "page": "/hochiminh/karaoke/the-one/",
+    "label": "호치민 더원 가라오케",
+    "cover": "/hochiminh/karaoke/the-one/#cover",
+    "gallery": "/hochiminh/karaoke/the-one/#gallery"
+  },
+  {
+    "page": "/hochiminh/massage/dodo-spa/",
+    "label": "호치민 도도스파",
+    "cover": "/hochiminh/massage/dodo-spa/#cover",
+    "gallery": "/hochiminh/massage/dodo-spa/#gallery"
+  },
+  {
+    "page": "/hochiminh/massage/massage-new/",
+    "label": "호치민 마사지 뉴",
+    "cover": "/hochiminh/massage/massage-new/#cover",
+    "gallery": "/hochiminh/massage/massage-new/#gallery"
   },
   {
     "page": "/hochiminh/massage/stocking/",
@@ -150,10 +240,40 @@
     "gallery": "/hochiminh/massage/stocking/#gallery"
   },
   {
+    "page": "/hochiminh/massage/strawberry-scrub/",
+    "label": "호치민 딸기 때밀이스파",
+    "cover": "/hochiminh/massage/strawberry-scrub/#cover",
+    "gallery": "/hochiminh/massage/strawberry-scrub/#gallery"
+  },
+  {
     "page": "/hochiminh/massage/windy2/",
     "label": "호치민 윈디2 마사지",
     "cover": "/hochiminh/massage/windy2/#cover",
     "gallery": "/hochiminh/massage/windy2/#gallery"
+  },
+  {
+    "page": "/nhatrang/karaoke/angel/",
+    "label": "나트랑 엔젤 가라오케",
+    "cover": "/nhatrang/karaoke/angel/#cover",
+    "gallery": "/nhatrang/karaoke/angel/#gallery"
+  },
+  {
+    "page": "/nhatrang/karaoke/anova/",
+    "label": "나트랑 아노바 가라오케",
+    "cover": "/nhatrang/karaoke/anova/#cover",
+    "gallery": "/nhatrang/karaoke/anova/#gallery"
+  },
+  {
+    "page": "/nhatrang/karaoke/avatar/",
+    "label": "나트랑 아바타 가라오케",
+    "cover": "/nhatrang/karaoke/avatar/#cover",
+    "gallery": "/nhatrang/karaoke/avatar/#gallery"
+  },
+  {
+    "page": "/nhatrang/karaoke/dubai/",
+    "label": "나트랑 두바이 가라오케",
+    "cover": "/nhatrang/karaoke/dubai/#cover",
+    "gallery": "/nhatrang/karaoke/dubai/#gallery"
   },
   {
     "page": "/nhatrang/karaoke/galina/",
@@ -168,10 +288,34 @@
     "gallery": "/nhatrang/karaoke/kingdom/#gallery"
   },
   {
+    "page": "/nhatrang/karaoke/master/",
+    "label": "나트랑 마스터 가라오케",
+    "cover": "/nhatrang/karaoke/master/#cover",
+    "gallery": "/nhatrang/karaoke/master/#gallery"
+  },
+  {
+    "page": "/nhatrang/karaoke/sky/",
+    "label": "나트랑 스카이 가라오케",
+    "cover": "/nhatrang/karaoke/sky/#cover",
+    "gallery": "/nhatrang/karaoke/sky/#gallery"
+  },
+  {
+    "page": "/nhatrang/massage/cherry-spa/",
+    "label": "나트랑 체리스파",
+    "cover": "/nhatrang/massage/cherry-spa/#cover",
+    "gallery": "/nhatrang/massage/cherry-spa/#gallery"
+  },
+  {
     "page": "/nhatrang/massage/cloud-nine/",
     "label": "나트랑 클라우드 나인",
     "cover": "/nhatrang/massage/cloud-nine/#cover",
     "gallery": "/nhatrang/massage/cloud-nine/#gallery"
+  },
+  {
+    "page": "/nhatrang/massage/dubai/",
+    "label": "나트랑 두바이 마사지",
+    "cover": "/nhatrang/massage/dubai/#cover",
+    "gallery": "/nhatrang/massage/dubai/#gallery"
   },
   {
     "page": "/nhatrang/massage/emperor-spa/",
@@ -180,9 +324,51 @@
     "gallery": "/nhatrang/massage/emperor-spa/#gallery"
   },
   {
+    "page": "/nhatrang/massage/green-barber/",
+    "label": "나트랑 그린 이발소",
+    "cover": "/nhatrang/massage/green-barber/#cover",
+    "gallery": "/nhatrang/massage/green-barber/#gallery"
+  },
+  {
+    "page": "/nhatrang/massage/hoa-da-4/",
+    "label": "나트랑 화다4 마사지",
+    "cover": "/nhatrang/massage/hoa-da-4/#cover",
+    "gallery": "/nhatrang/massage/hoa-da-4/#gallery"
+  },
+  {
+    "page": "/nhatrang/massage/hoa-dao/",
+    "label": "나트랑 화다우 마사지",
+    "cover": "/nhatrang/massage/hoa-dao/#cover",
+    "gallery": "/nhatrang/massage/hoa-dao/#gallery"
+  },
+  {
+    "page": "/nhatrang/massage/now-spa/",
+    "label": "나트랑 나우스파",
+    "cover": "/nhatrang/massage/now-spa/#cover",
+    "gallery": "/nhatrang/massage/now-spa/#gallery"
+  },
+  {
+    "page": "/nhatrang/massage/quinter/",
+    "label": "나트랑 퀸터 호텔 마사지",
+    "cover": "/nhatrang/massage/quinter/#cover",
+    "gallery": "/nhatrang/massage/quinter/#gallery"
+  },
+  {
+    "page": "/nhatrang/massage/sakura/",
+    "label": "나트랑 사쿠라 마사지",
+    "cover": "/nhatrang/massage/sakura/#cover",
+    "gallery": "/nhatrang/massage/sakura/#gallery"
+  },
+  {
     "page": "/nhatrang/massage/tokyo/",
     "label": "나트랑 도쿄마사지",
     "cover": "/nhatrang/massage/tokyo/#cover",
     "gallery": "/nhatrang/massage/tokyo/#gallery"
+  },
+  {
+    "page": "/nhatrang/massage/vitamin-spa/",
+    "label": "나트랑 비타민스파",
+    "cover": "/nhatrang/massage/vitamin-spa/#cover",
+    "gallery": "/nhatrang/massage/vitamin-spa/#gallery"
   }
 ]
