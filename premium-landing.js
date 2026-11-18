@@ -6,12 +6,12 @@
  const originalImage=figure.querySelector('img');let last='';
  const dialog=document.createElement('dialog');dialog.className='premium-photo-dialog';dialog.setAttribute('aria-label','여행 사진 크게 보기');
  const close=document.createElement('button');close.type='button';close.textContent='닫기 ×';close.addEventListener('click',()=>dialog.close());
- const enlarged=new Image();enlarged.alt='';const caption=document.createElement('p');
- dialog.append(close,enlarged,caption);dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});document.body.append(dialog);
- function zoom(photo){enlarged.src=photo.url;enlarged.alt=photo.alt||'여행 사진';caption.textContent=enlarged.alt;if(!dialog.open)dialog.showModal();}
+ const enlarged=new Image();enlarged.alt='';
+ dialog.append(close,enlarged);dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});document.body.append(dialog);
+ function zoom(photo){enlarged.src=photo.url;enlarged.alt=photo.alt||'여행 사진';if(!dialog.open)dialog.showModal();}
  function photoNode(photo){const button=document.createElement('button');button.type='button';button.setAttribute('aria-label',(photo.alt||'사진')+' 확대');
  const img=new Image();img.src=photo.url;img.alt=photo.alt||'여행 사진';img.loading='lazy';img.decoding='async';if(photo.width)img.width=photo.width;if(photo.height)img.height=photo.height;
- const span=document.createElement('span');span.textContent=photo.alt||photo.title||'사진 크게 보기';button.append(img,span);button.addEventListener('click',()=>zoom(photo));return button;}
+ button.append(img);button.addEventListener('click',()=>zoom(photo));return button;}
  async function sync(){if(document.hidden)return;
  try{const response=await fetch('/api/images?page='+encodeURIComponent(page),{cache:'no-store'});if(!response.ok)return;
  const data=await response.json();const photos=Array.isArray(data.images)?data.images:[],fingerprint=JSON.stringify(photos);if(last===fingerprint)return;last=fingerprint;
