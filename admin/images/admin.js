@@ -15,7 +15,7 @@ function options(select,filter=''){
  for(const slot of slots.filter(x=>(select.id!=='uploadSlot'||x.role==='cover')).filter(x=>(x.label+' '+x.page).toLowerCase().includes(filter.toLowerCase()))){const option=el('option',slot.label);option.value=slot.id;select.append(option);}
  if([...select.options].some(o=>o.value===selected))select.value=selected;
 }
-async function load(){const data=await api('/api/images?admin=1');images=data.images;slots=data.slots;options($('uploadSlot'),$('slotSearch').value);options($('editSlot'));render();}
+async function load(){const data=await api('/api/images?admin=1');images=data.images;slots=data.slots.filter(slot=>data.venues.some(venue=>venue.page===slot.page));options($('uploadSlot'),$('slotSearch').value);options($('editSlot'));render();}
 async function signedUpload(url,file,onProgress){return new Promise((resolve,reject)=>{const xhr=new XMLHttpRequest();xhr.open('PUT',url);xhr.setRequestHeader('Content-Type',file.type||'application/octet-stream');xhr.timeout=600000;xhr.upload.onprogress=e=>{if(e.lengthComputable)onProgress(Math.round(e.loaded/e.total*100));};xhr.onerror=()=>reject(new Error('네트워크 오류입니다. 연결을 확인해 주세요.'));xhr.ontimeout=()=>reject(new Error('업로드 시간이 초과되었습니다. 다시 시도해 주세요.'));xhr.onload=()=>xhr.status>=200&&xhr.status<300?resolve():reject(new Error('원본 전송에 실패했습니다. 다시 시도해 주세요.'));xhr.send(file);});}
 async function uploadItem(item){
  item.running=true;item.status.className='status';item.status.textContent='원본 업로드 준비 중…';item.remove.disabled=true;
