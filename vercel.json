@@ -1,13 +1,43 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "node scripts/check-database.cjs && npm run build",
   "outputDirectory": "public",
-  "functions": {"api/*.js": {"maxDuration": 300}},
-  "rewrites": [{"source": "/admin/images", "destination": "/admin/images/index.html"}],
-  "headers": [{"source": "/admin/(.*)", "headers": [
-    {"key": "Cache-Control", "value": "no-store"},
-    {"key": "X-Frame-Options", "value": "DENY"},
-    {"key": "Referrer-Policy", "value": "no-referrer"},
-    {"key": "X-Content-Type-Options", "value": "nosniff"},
-    {"key": "Content-Security-Policy", "value": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob:; connect-src 'self' https://*.supabase.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"}
-  ]}]
+  "functions": {
+    "api/*.js": {
+      "maxDuration": 300,
+      "includeFiles": "lib/certs/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/admin/images",
+      "destination": "/admin/images/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/admin/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob:; connect-src 'self' https://*.supabase.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+        }
+      ]
+    }
+  ]
 }

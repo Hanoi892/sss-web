@@ -124,3 +124,18 @@ IMAGE_ADMIN_SETUP_TOKEN
 | 10MB 이상 | 31,006,864 | 294,791 | 4200×3000 → 1714×1224 |
 
 대용량 샘플은 압축 난도가 높은 무작위 픽셀 JPEG입니다. 일반 사진과 결과 품질·해상도 감소율이 다릅니다. 압축이 쉬운 4000×3000 이미지에서는 원본 해상도를 유지하는 별도 검증도 통과했습니다.
+
+### 2026-11-18 DB 인증서 연결 오류 수정
+
+검증 배포의 `/api/image-auth` 로그에서 `SELF_SIGNED_CERT_IN_CHAIN`을 확인했습니다.
+Supabase PostgreSQL CA가 기본 Node 신뢰 목록에 없어 최초 상태 조회가 실패한 문제입니다.
+
+- Supabase 루트 CA를 서버 번들에 포함하고 인증서 체인·호스트 이름 검증을 유지합니다.
+- node-postgres가 URL의 `sslmode` 때문에 명시한 CA를 덮어쓰지 않도록 Supabase 연결 옵션을 정규화합니다.
+- 인증서 검증을 비활성화하는 옵션은 사용하지 않습니다.
+- Vercel 빌드에서 실제 DB의 TLS 검증과 `SELECT 1`, 관리자 상태 핸들러를 검사합니다. 이 검사가 실패하면 배포 빌드를 중단합니다.
+- 인증서·연결 설정 회귀 테스트 4개와 기존 API·보안 테스트를 합한 관련 테스트 26개가 통과했습니다.
+
+CA 배포 위치: https://supabase-downloads.s3-ap-southeast-1.amazonaws.com/prod/ssl/prod-ca-2021.crt
+SHA-256: `80:70:25:AD:50:D4:ED:21:9D:2C:9C:7D:29:9C:00:4F:82:4E:B0:0C:F7:F6:5A:FE:F6:07:D0:7B:72:E6:CA:FA`
+유효 기간: 2021-04-28 ~ 2031-04-26.
