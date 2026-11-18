@@ -1,0 +1,30 @@
+name: Notify Bing and Naver via IndexNow
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - '**/index.html'
+      - 'sitemap.xml'
+      - '7182c1395cfe391c4953ecd7795b1687.txt'
+      - 'scripts/submit-indexnow.cjs'
+      - '.github/workflows/indexnow.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify-indexnow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out production commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 2
+          persist-credentials: false
+      - name: Validate IndexNow notifier syntax
+        run: node --check scripts/submit-indexnow.cjs
+      - name: Notify Bing and Naver about changed public pages
+        run: node scripts/submit-indexnow.cjs
