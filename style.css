@@ -183,3 +183,25 @@
 .ktv-pricing tbody td{color:#e0e6ed}
 .ktv-pricing .ktv-pricing__source{margin-bottom:0}
 @media(max-width:600px){.ktv-pricing{padding:17px 14px;margin:22px 0}.ktv-pricing table{font-size:12px}.ktv-pricing td,.ktv-pricing th{padding:9px}}
+
+/* Detailed source-reviewed KTV pricing and venue comparison. */
+.ktv-deep-guide{border:1px solid #3d4858;border-radius:12px;background:#101722;padding:24px 25px;margin:32px 0}
+.ktv-deep-guide h2{font-size:clamp(22px,2.6vw,31px);line-height:1.36;margin:4px 0 14px}
+.ktv-deep-guide h3{font-size:19px;margin:25px 0 12px;color:#f3d3a2}
+.ktv-deep-guide .ktv-pricing__scroll{border:1px solid #344052;border-radius:8px}
+.ktv-wide-table{border-collapse:collapse;min-width:860px;width:100%;font-size:12px;line-height:1.65}
+.ktv-wide-table th,.ktv-wide-table td{padding:12px 10px;border-bottom:1px solid #344151;text-align:left;vertical-align:top}
+.ktv-wide-table thead th{white-space:nowrap;color:#f8f6ef;background:#1e2937}
+.ktv-wide-table tbody th{white-space:nowrap;color:#e6bf84}
+.ktv-wide-table tbody th a{text-decoration:underline;text-underline-offset:3px}
+.ktv-wide-table tbody tr:nth-child(even){background:#172130}
+.ktv-wide-table tbody td{color:#dce4ed}
+.ktv-note-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.ktv-note-card{border:1px solid #344356;border-radius:9px;background:#182231;padding:16px 17px}
+.ktv-note-card h4{color:#f1d0a0;font-size:15px;margin:0 0 7px}
+.ktv-note-card p{color:#c6d0de;font-size:13px;line-height:1.8;margin:0}
+.ktv-disclosure{padding:12px 15px;border:1px solid #374456;border-radius:7px;margin:15px 0;color:#c5d0dd}
+.ktv-disclosure summary{cursor:pointer;color:#f0d3ab;font-weight:700}
+.ktv-disclosure p{margin:9px 0 0;font-size:13px}
+.ktv-deep-guide .ktv-pricing__source{font-size:12px;line-height:1.9}
+@media(max-width:680px){.ktv-deep-guide{padding:19px 13px}.ktv-note-grid{grid-template-columns:1fr}}
