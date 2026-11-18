@@ -3,6 +3,33 @@
  const originals=new WeakMap();
  const page=location.pathname.replace(/index\.html$/,'').replace(/\/?$/,'/');
 
+
+ function placeArticlePhotos(hero,photos){
+  const article=hero.closest('article')||hero.closest('.prose');if(!article)return;
+  document.getElementById('dbj-venue-gallery')?.remove();
+  article.querySelectorAll('.dbj-article-photo').forEach(figure=>figure.remove());
+  if(!photos.length)return;
+  const headings=[];
+  for(const heading of article.querySelectorAll(':scope > h2')){
+   if(/FAQ|자주 묻|같은 지역|다른.*비교|함께|자료 출처/.test(heading.textContent))break;
+   headings.push(heading);
+  }
+  const anchors=headings.map(heading=>{
+   let tail=heading;
+   while(tail.nextElementSibling&&tail.nextElementSibling.tagName!=='H2'&&!tail.nextElementSibling.matches('.faq,.source,.gridlinks,.related-bottom'))tail=tail.nextElementSibling;
+   return tail;
+  });
+  if(!anchors.length)anchors.push(hero);
+  const tails=new Map();
+  photos.forEach((photo,index)=>{
+   const anchor=anchors[Math.min(anchors.length-1,Math.floor(index*anchors.length/photos.length))];
+   const figure=document.createElement('figure');figure.className='dbj-article-photo';figure.dataset.imageId=photo.id;
+   const img=new Image();img.src=photo.url;img.alt=photo.alt||'업소 상세 사진 '+(index+1);img.width=photo.width;img.height=photo.height;img.loading='lazy';img.decoding='async';
+   const caption=document.createElement('figcaption');caption.textContent=img.alt;figure.append(img,caption);
+   (tails.get(anchor)||anchor).after(figure);tails.set(anchor,figure);
+  });
+ }
+
  let last='',busy=false;
  async function update(){
   if(busy||document.hidden)return;busy=true;
@@ -20,7 +47,7 @@
     const cover=images.filter(x=>x.slot===page+'#cover');
     const gallery=images.filter(x=>x.slot===page+'#gallery');
     const photos=direct&&cover.length?cover.slice(0,1):href&&representatives.some(x=>x.slot===href+'#cover')?representatives.filter(x=>x.slot===href+'#cover').slice(0,1):images.filter(x=>x.slot===`${page}#image-${i}`);
-    if(direct){let section=document.getElementById('dbj-venue-gallery');if(gallery.length){if(!section){section=document.createElement('section');section.id='dbj-venue-gallery';section.setAttribute('aria-label','업소 추가 사진');el.after(section);}section.replaceChildren();for(const photo of gallery){const img=new Image();img.src=photo.url;img.alt=photo.alt;img.loading='lazy';img.decoding='async';img.width=photo.width;img.height=photo.height;section.append(img);}}else section?.remove();}
+    if(direct)placeArticlePhotos(el,gallery);
     if(!photos.length){if(el.dataset.managed){el.innerHTML=original.html;el.classList.remove('dbj-has-image');delete el.dataset.managed;for(const [key,value] of [['aria-hidden',original.hidden],['style',original.style]]){if(value===null)el.removeAttribute(key);else el.setAttribute(key,value);}}return;}
     el.dataset.managed='true';el.classList.add('dbj-has-image');el.removeAttribute('aria-hidden');
     el.style.position='relative';el.style.overflow='hidden';
@@ -35,7 +62,7 @@
    });
   }catch{}finally{busy=false;}
  }
- const style=document.createElement('style');style.textContent='.dbj-has-image::after{display:none!important}.detail-hero.dbj-has-image,.picture.dbj-has-image,.related-venue-card__media.dbj-has-image{aspect-ratio:4/3;height:auto}.thumb.dbj-has-image{aspect-ratio:4/3;min-height:0;height:111px}#dbj-venue-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}#dbj-venue-gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#11151b;border-radius:10px}@media(max-width:600px){#dbj-venue-gallery{grid-template-columns:1fr}}';document.head.append(style);
+ const style=document.createElement('style');style.textContent='.dbj-has-image::after{display:none!important}.detail-hero.dbj-has-image,.picture.dbj-has-image,.related-venue-card__media.dbj-has-image{aspect-ratio:4/3;height:auto}.thumb.dbj-has-image{aspect-ratio:4/3;min-height:0;height:111px}.dbj-article-photo{margin:28px 0}.dbj-article-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#11151b;border-radius:10px}.dbj-article-photo figcaption{font-size:12px;color:var(--sub,#a8b1c1);text-align:center;margin-top:8px;letter-spacing:normal}';document.head.append(style);
  const observer=new MutationObserver(records=>{if(records.some(record=>[...record.addedNodes].some(node=>node.nodeType===1&&(node.matches('.detail-hero,.picture,.thumb,.related-venue-card__media')||node.querySelector('.detail-hero,.picture,.thumb,.related-venue-card__media')))))update();});
  observer.observe(document.body,{childList:true,subtree:true});
  update();window.addEventListener('focus',update);document.addEventListener('visibilitychange',update);setInterval(update,60000);

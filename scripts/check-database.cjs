@@ -41,5 +41,6 @@ async function main(){
  console.log('image-manager: GET /api/image-auth handler passed (200); dedicated schema ready; admin '+(body.initialized?'configured':'first setup required'));
  await checkStorage();
  await require('./normalize-images.cjs').normalizeExisting();
+ await require('./prepare-article-images.cjs').prepareArticleImages();
 }
 main().catch(e=>{console.error('image-manager readiness failed:',e.code||e.name);process.exitCode=1;}).finally(()=>db().end());

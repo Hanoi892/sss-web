@@ -27,6 +27,7 @@
   },
   "private": true,
   "devDependencies": {
-    "@electric-sql/pglite": "^0.5.16"
+    "@electric-sql/pglite": "^0.5.16",
+    "linkedom": "^0.18.15"
   }
 }
