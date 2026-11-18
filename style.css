@@ -3,8 +3,8 @@
 @media(max-width:850px){.hero-grid,.article{grid-template-columns:1fr}.hero-panel{max-width:600px}.sidebar{position:static}.cards{grid-template-columns:repeat(2,1fr)}.links{gap:10px;font-size:12px}.navinner{align-items:start;padding:15px 0;flex-direction:column}.hero{padding:50px 0}.feature-grid{grid-template-columns:1fr}}
 @media(max-width:570px){.cards,.category-grid{grid-template-columns:1fr}.list-card{flex-direction:column}.thumb{flex-basis:150px}.info-grid{grid-template-columns:1fr}.footergrid{flex-direction:column}.heading h2{font-size:24px}.hero h1{font-size:38px}.place strong{font-size:19px}}
 
-/* Dongbamjeong inquiry widget: bottom-left desktop, bottom sticky mobile */
-.contact-dock{position:fixed;bottom:22px;left:20px;z-index:9999;width:230px;border:1px solid #635037;background:#141922f2;backdrop-filter:blur(14px);border-radius:16px;padding:12px;box-shadow:0 12px 34px #0008;font-family:'Noto Sans KR',system-ui,sans-serif}
+/* Dongbamjeong inquiry widget: bottom-right desktop, bottom sticky mobile */
+.contact-dock{position:fixed;bottom:22px;right:20px;z-index:9999;width:230px;border:1px solid #635037;background:#141922f2;backdrop-filter:blur(14px);border-radius:16px;padding:12px;box-shadow:0 12px 34px #0008;font-family:'Noto Sans KR',system-ui,sans-serif}
 .contact-dock__title{font-size:12px;font-weight:800;color:#e7d9bf;margin:0 0 9px;letter-spacing:.02em}
 .contact-dock__buttons{display:grid;gap:8px}
 .contact-dock__link{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 12px;border-radius:10px;font-size:13px;font-weight:800;line-height:1.2;transition:transform .15s,filter .15s}
