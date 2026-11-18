@@ -7798,5 +7798,617 @@
     "page": "/pool-villa/",
     "label": "베트남 풀빌라 · 여행 사진 갤러리 (여러 장)",
     "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-danang-legend-danang-cover",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 레전드 다낭 골프 리조트 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-danang-legend-danang-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 레전드 다낭 골프 리조트 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-danang-montgomerie-links-cover",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 몽고메리 링크스 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-danang-montgomerie-links-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 몽고메리 링크스 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-danang-banahills-cover",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 바나힐스 골프 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-danang-banahills-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 바나힐스 골프 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-danang-hoiana-shores-cover",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 호이아나 쇼어스 골프 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-danang-hoiana-shores-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 호이아나 쇼어스 골프 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-danang-vinpearl-namhoian-cover",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 빈펄 골프 남호이안 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-danang-vinpearl-namhoian-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 빈펄 골프 남호이안 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-danang-laguna-langco-cover",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 라구나 골프 랑코 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-danang-laguna-langco-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 다낭 · 호이안 · 후에 / 라구나 골프 랑코 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hanoi-longbien-cover",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / 롱비엔 골프 코스 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hanoi-longbien-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / 롱비엔 골프 코스 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hanoi-vantri-cover",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / 반찌 골프 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hanoi-vantri-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / 반찌 골프 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hanoi-legendhill-cover",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / BRG 레전드 힐 골프 리조트 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hanoi-legendhill-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / BRG 레전드 힐 골프 리조트 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hanoi-skylake-cover",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / 스카이레이크 골프 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hanoi-skylake-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / 스카이레이크 골프 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hanoi-kingsisland-cover",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / BRG 킹스아일랜드 골프 리조트 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hanoi-kingsisland-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 하노이 · 북부 / BRG 킹스아일랜드 골프 리조트 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-tansonnhat-cover",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 탄손녓 골프 코스 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-tansonnhat-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 탄손녓 골프 코스 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-vietnam-golf-cover",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 베트남 골프 & 컨트리 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-vietnam-golf-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 베트남 골프 & 컨트리 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-songbe-cover",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 송베 골프 리조트 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-songbe-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 송베 골프 리조트 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-twindoves-cover",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 트윈도브스 골프 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-twindoves-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 트윈도브스 골프 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-longthanh-cover",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 롱탄 골프 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-hochiminh-longthanh-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 호치민 · 남부 / 롱탄 골프 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-nhatrang-vinpearl-nhatrang-cover",
+    "page": "/golf/",
+    "label": "골프장 / 나트랑 · 깜란 / 빈펄 골프 나트랑 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-nhatrang-vinpearl-nhatrang-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 나트랑 · 깜란 / 빈펄 골프 나트랑 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-nhatrang-diamondbay-cover",
+    "page": "/golf/",
+    "label": "골프장 / 나트랑 · 깜란 / 다이아몬드베이 골프 & 빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-nhatrang-diamondbay-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 나트랑 · 깜란 / 다이아몬드베이 골프 & 빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-nhatrang-kn-golf-cover",
+    "page": "/golf/",
+    "label": "골프장 / 나트랑 · 깜란 / KN 골프 링크스 깜란 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-nhatrang-kn-golf-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 나트랑 · 깜란 / KN 골프 링크스 깜란 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/golf/#spot-nhatrang-anara-binhtien-cover",
+    "page": "/golf/",
+    "label": "골프장 / 나트랑 · 깜란 / 아나라 빈띠엔 골프 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/golf/#spot-nhatrang-anara-binhtien-gallery",
+    "page": "/golf/",
+    "label": "골프장 / 나트랑 · 깜란 / 아나라 빈띠엔 골프 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-danang-hoiana-casino-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 다낭 · 호이안 / 호이아나 카지노 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-danang-hoiana-casino-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 다낭 · 호이안 / 호이아나 카지노 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-danang-crown-international-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 다낭 · 호이안 / 크라운 인터내셔널 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-danang-crown-international-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 다낭 · 호이안 / 크라운 인터내셔널 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-danang-club99-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 다낭 · 호이안 / 클럽 99 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-danang-club99-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 다낭 · 호이안 / 클럽 99 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-danang-club88-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 다낭 · 호이안 / 클럽 88 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-danang-club88-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 다낭 · 호이안 / 클럽 88 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-hanoi-winners-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 하노이 · 북부 / 위너스 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-hanoi-winners-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 하노이 · 북부 / 위너스 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-hanoi-millionaire-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 하노이 · 북부 / 밀리어네어 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-hanoi-millionaire-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 하노이 · 북부 / 밀리어네어 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-hanoi-grandplaza-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 하노이 · 북부 / 그랜드 플라자 게이밍 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-hanoi-grandplaza-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 하노이 · 북부 / 그랜드 플라자 게이밍 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-hochiminh-grand-hotram-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 호치민 · 호짬 / 더 그랜드 호짬 카지노 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-hochiminh-grand-hotram-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 호치민 · 호짬 / 더 그랜드 호짬 카지노 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-hochiminh-palazzo-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 호치민 · 호짬 / 팔라조 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-hochiminh-palazzo-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 호치민 · 호짬 / 팔라조 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-hochiminh-clubv-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 호치민 · 호짬 / 클럽 V · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-hochiminh-clubv-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 호치민 · 호짬 / 클럽 V · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-nhatrang-dqua-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 나트랑 · 깜란 / 디쿠아 게이밍 시설 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-nhatrang-dqua-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 나트랑 · 깜란 / 디쿠아 게이밍 시설 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-nhatrang-duyenha-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 나트랑 · 깜란 / 두옌하 게이밍 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-nhatrang-duyenha-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 나트랑 · 깜란 / 두옌하 게이밍 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-nhatrang-havana-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 나트랑 · 깜란 / 임페리얼 하바나 클럽 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-nhatrang-havana-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 나트랑 · 깜란 / 임페리얼 하바나 클럽 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/casino/#spot-phuquoc-corona-cover",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 푸꾸옥 · 북부 리조트 / 코로나 카지노 푸꾸옥 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/casino/#spot-phuquoc-corona-gallery",
+    "page": "/casino/",
+    "label": "카지노·게이밍 시설 / 푸꾸옥 · 북부 리조트 / 코로나 카지노 푸꾸옥 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-premier-village-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / 프리미어 빌리지 다낭 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-premier-village-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / 프리미어 빌리지 다낭 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-hyatt-regency-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / 하얏트 리젠시 다낭 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-hyatt-regency-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / 하얏트 리젠시 다낭 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-naman-retreat-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / 나만 리트리트 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-naman-retreat-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / 나만 리트리트 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-tia-wellness-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / TIA 웰니스 리조트 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-tia-wellness-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / TIA 웰니스 리조트 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-four-seasons-namhai-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / 포시즌스 더 남하이 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-danang-four-seasons-namhai-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 다낭 · 호이안 / 포시즌스 더 남하이 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-hanoi-flamingo-dailai-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 하노이 · 바비 · 다이라이 근교 / 플라밍고 다이라이 리조트 빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-hanoi-flamingo-dailai-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 하노이 · 바비 · 다이라이 근교 / 플라밍고 다이라이 리조트 빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-hanoi-melia-bavi-3br-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 하노이 · 바비 · 다이라이 근교 / 멜리아 바비 3베드룸 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-hanoi-melia-bavi-3br-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 하노이 · 바비 · 다이라이 근교 / 멜리아 바비 3베드룸 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-hanoi-melia-bavi-5br-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 하노이 · 바비 · 다이라이 근교 / 멜리아 바비 5베드룸 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-hanoi-melia-bavi-5br-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 하노이 · 바비 · 다이라이 근교 / 멜리아 바비 5베드룸 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-hanoi-serena-onsen-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 하노이 · 바비 · 다이라이 근교 / 세레나 킴보이 온센 빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-hanoi-serena-onsen-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 하노이 · 바비 · 다이라이 근교 / 세레나 킴보이 온센 빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-nhatrang-fusion-camranh-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 나트랑 · 깜란 · 닌반베이 / 퓨전 리조트 깜란 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-nhatrang-fusion-camranh-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 나트랑 · 깜란 · 닌반베이 / 퓨전 리조트 깜란 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-nhatrang-mia-nhatrang-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 나트랑 · 깜란 · 닌반베이 / 미아 리조트 나트랑 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-nhatrang-mia-nhatrang-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 나트랑 · 깜란 · 닌반베이 / 미아 리조트 나트랑 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-nhatrang-sixsenses-ninhvan-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 나트랑 · 깜란 · 닌반베이 / 식스센스 닌반베이 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-nhatrang-sixsenses-ninhvan-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 나트랑 · 깜란 · 닌반베이 / 식스센스 닌반베이 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-nhatrang-the-anam-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 나트랑 · 깜란 · 닌반베이 / 더 아남 깜란 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-nhatrang-the-anam-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 나트랑 · 깜란 · 닌반베이 / 더 아남 깜란 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-hochiminh-melia-hotram-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 호치민 · 호짬 해안 / 멜리아 호짬 더 레벨 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-hochiminh-melia-hotram-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 호치민 · 호짬 해안 / 멜리아 호짬 더 레벨 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-hochiminh-angsana-hotram-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 호치민 · 호짬 해안 / 앙사나 호짬 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-hochiminh-angsana-hotram-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 호치민 · 호짬 해안 / 앙사나 호짬 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-hochiminh-ixora-hotram-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 호치민 · 호짬 해안 / 익소라 호짬 바이 퓨전 풀빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-hochiminh-ixora-hotram-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 호치민 · 호짬 해안 / 익소라 호짬 바이 퓨전 풀빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
+  },
+  {
+    "id": "/pool-villa/#spot-hochiminh-ixora-oceanfront-cover",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 호치민 · 호짬 해안 / 익소라 오션프런트 빌라 · 대표사진 (1장)",
+    "role": "cover"
+  },
+  {
+    "id": "/pool-villa/#spot-hochiminh-ixora-oceanfront-gallery",
+    "page": "/pool-villa/",
+    "label": "풀빌라 / 호치민 · 호짬 해안 / 익소라 오션프런트 빌라 · 추가사진 (여러 장)",
+    "role": "gallery"
   }
 ]
