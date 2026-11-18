@@ -1,21 +1,27 @@
 (()=>{
- const containers=[...document.querySelectorAll('.detail-hero,.picture,.thumb,.related-venue-card__media')];if(!containers.length)return;
+ let containers=[];
+ const originals=new WeakMap();
  const page=location.pathname.replace(/index\.html$/,'').replace(/\/?$/,'/');
- const original=containers.map(el=>({html:el.innerHTML,hidden:el.getAttribute('aria-hidden'),style:el.getAttribute('style')}));
+
  let last='',busy=false;
  async function update(){
   if(busy||document.hidden)return;busy=true;
   try{
    const response=await fetch(`/api/images?page=${encodeURIComponent(page)}`,{cache:'no-store'});if(!response.ok)return;
-   const {images,representatives=[]}=await response.json();const fingerprint=JSON.stringify([images,representatives]);if(fingerprint===last)return;last=fingerprint;
+   const {images,representatives=[]}=await response.json();const next=[...document.querySelectorAll('.detail-hero,.picture,.thumb,.related-venue-card__media')];
+   const changed=next.length!==containers.length||next.some((el,i)=>el!==containers[i]);
+   const fingerprint=JSON.stringify([images,representatives]);if(fingerprint===last&&!changed)return;last=fingerprint;containers=next;
    containers.forEach((el,i)=>{
-    const href=el.closest('a[href]')?.getAttribute('href')||el.closest('.card')?.querySelector('a[href]')?.getAttribute('href');
+    if(!originals.has(el))originals.set(el,{html:el.innerHTML,hidden:el.getAttribute('aria-hidden'),style:el.getAttribute('style')});
+    const original=originals.get(el);
+    const link=el.closest('a[href]')||el.closest('.card')?.querySelector('a[href]');
+    const href=link?new URL(link.getAttribute('href'),location.href).pathname.replace(/index\.html$/,'').replace(/\/?$/,'/'):null;
     const direct=el.classList.contains('detail-hero');
     const cover=images.filter(x=>x.slot===page+'#cover');
     const gallery=images.filter(x=>x.slot===page+'#gallery');
     const photos=direct&&cover.length?cover.slice(0,1):href&&representatives.some(x=>x.slot===href+'#cover')?representatives.filter(x=>x.slot===href+'#cover').slice(0,1):images.filter(x=>x.slot===`${page}#image-${i}`);
     if(direct){let section=document.getElementById('dbj-venue-gallery');if(gallery.length){if(!section){section=document.createElement('section');section.id='dbj-venue-gallery';section.setAttribute('aria-label','업소 추가 사진');el.after(section);}section.replaceChildren();for(const photo of gallery){const img=new Image();img.src=photo.url;img.alt=photo.alt;img.loading='lazy';img.decoding='async';img.width=photo.width;img.height=photo.height;section.append(img);}}else section?.remove();}
-    if(!photos.length){if(el.dataset.managed){el.innerHTML=original[i].html;el.classList.remove('dbj-has-image');delete el.dataset.managed;for(const [key,value] of [['aria-hidden',original[i].hidden],['style',original[i].style]]){if(value===null)el.removeAttribute(key);else el.setAttribute(key,value);}}return;}
+    if(!photos.length){if(el.dataset.managed){el.innerHTML=original.html;el.classList.remove('dbj-has-image');delete el.dataset.managed;for(const [key,value] of [['aria-hidden',original.hidden],['style',original.style]]){if(value===null)el.removeAttribute(key);else el.setAttribute(key,value);}}return;}
     el.dataset.managed='true';el.classList.add('dbj-has-image');el.removeAttribute('aria-hidden');
     el.style.position='relative';el.style.overflow='hidden';
     let current=0;
@@ -30,5 +36,7 @@
   }catch{}finally{busy=false;}
  }
  const style=document.createElement('style');style.textContent='.dbj-has-image::after{display:none!important}.detail-hero.dbj-has-image,.picture.dbj-has-image,.related-venue-card__media.dbj-has-image{aspect-ratio:4/3;height:auto}.thumb.dbj-has-image{aspect-ratio:4/3;min-height:0;height:111px}#dbj-venue-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}#dbj-venue-gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#11151b;border-radius:10px}@media(max-width:600px){#dbj-venue-gallery{grid-template-columns:1fr}}';document.head.append(style);
+ const observer=new MutationObserver(records=>{if(records.some(record=>[...record.addedNodes].some(node=>node.nodeType===1&&(node.matches('.detail-hero,.picture,.thumb,.related-venue-card__media')||node.querySelector('.detail-hero,.picture,.thumb,.related-venue-card__media')))))update();});
+ observer.observe(document.body,{childList:true,subtree:true});
  update();window.addEventListener('focus',update);document.addEventListener('visibilitychange',update);setInterval(update,60000);
 })();
