@@ -21,7 +21,7 @@
     let current=0;
     function render(){
      const p=photos[current],img=new Image();img.alt=p.alt;img.title=p.title;img.width=p.width;img.height=p.height;img.loading=el.getBoundingClientRect().top<innerHeight?'eager':'lazy';img.decoding='async';img.src=p.url;
-     img.style.cssText='display:block;width:100%;height:100%;object-fit:contain;position:absolute;inset:0';
+     img.style.cssText='display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0';
      el.replaceChildren(img);
      if(photos.length>1){const controls=document.createElement('span');controls.style.cssText='position:absolute;bottom:8px;right:8px;display:flex;gap:6px;align-items:center;background:#0b0d12dd;border-radius:8px;padding:3px 6px;color:white;letter-spacing:normal';
       for(const [label,delta] of [['이전 사진',-1],['다음 사진',1]]){const btn=document.createElement('button');btn.type='button';btn.textContent=delta<0?'‹':'›';btn.setAttribute('aria-label',label);btn.style.cssText='cursor:pointer;color:white;background:transparent;border:0;font-size:24px;min-width:32px;min-height:32px';btn.onclick=e=>{e.preventDefault();e.stopPropagation();current=(current+delta+photos.length)%photos.length;render();};controls.append(btn);}el.append(controls);}
@@ -29,6 +29,6 @@
    });
   }catch{}finally{busy=false;}
  }
- const style=document.createElement('style');style.textContent='.dbj-has-image::after{display:none!important}.detail-hero.dbj-has-image,.picture.dbj-has-image,.related-venue-card__media.dbj-has-image{aspect-ratio:4/3;height:auto}.thumb.dbj-has-image{aspect-ratio:4/3;min-height:0;height:111px}#dbj-venue-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}#dbj-venue-gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#11151b;border-radius:10px}@media(max-width:600px){#dbj-venue-gallery{grid-template-columns:1fr}}';document.head.append(style);
+ const style=document.createElement('style');style.textContent='.dbj-has-image::after{display:none!important}.detail-hero.dbj-has-image,.picture.dbj-has-image,.related-venue-card__media.dbj-has-image{aspect-ratio:4/3;height:auto}.thumb.dbj-has-image{aspect-ratio:4/3;min-height:0;height:111px}#dbj-venue-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}#dbj-venue-gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;background:#11151b;border-radius:10px}@media(max-width:600px){#dbj-venue-gallery{grid-template-columns:1fr}}';document.head.append(style);
  update();window.addEventListener('focus',update);document.addEventListener('visibilitychange',update);setInterval(update,60000);
 })();
