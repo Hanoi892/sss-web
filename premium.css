@@ -148,3 +148,6 @@
 @media(max-width:1060px){.premium-page .spot-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:780px){.premium-page .venue-region__heading{grid-template-columns:1fr;gap:6px}.premium-page .directory-stats{flex-wrap:wrap;gap:13px}.premium-page .directory-stats p{width:100%;max-width:none}}
 @media(max-width:590px){.premium-page .spot-grid{grid-template-columns:1fr}.premium-page .spot-card__body{padding:23px 20px}.premium-page .venue-region{scroll-margin-top:95px;margin-bottom:45px}.premium-page .venue-jump{gap:8px}.premium-page .venue-jump a{padding:9px 10px;font-size:11px}.premium-page .directory-stats strong{font-size:26px}.premium-page .venue-region__heading h3{font-size:25px}}
+
+.premium-page .spot-card__picture button span,.premium-page .spot-card__mini button span{display:none!important}
+@media(max-width:850px){.premium-page .premium-subnav{position:static}.premium-page .venue-region{scroll-margin-top:125px}}
