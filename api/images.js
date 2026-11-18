@@ -13,7 +13,7 @@ module.exports=s.wrapper(async(req,res)=>{
      return s.json(res,{images:rows.map(({path,source_hash,output_hash,...row})=>({...row,url:`/api/image-file?id=${row.id}&v=${row.version}`})),slots,venues});
    }
    const page=u.searchParams.get('page');
-   if(!slots.some(x=>x.page===page))return s.json(res,{images:[]});
+   if(page!=='/'&&!slots.some(x=>x.page===page))return s.json(res,{images:[],representatives:[]});
    const {rows}=await query("SELECT id,title,alt,width,height,slot,version FROM image_manager.images WHERE published=true AND split_part(slot,'#',1)=$1 ORDER BY position,created_at",[page]);
    const representatives=(await query("SELECT DISTINCT ON(slot) id,title,alt,width,height,slot,version FROM image_manager.images WHERE published=true AND slot LIKE '%#cover' ORDER BY slot,position,created_at")).rows;
    return s.json(res,{images:rows.map(row=>({...row,url:`/api/image-file?id=${row.id}&v=${row.version}`})),representatives:representatives.map(row=>({...row,url:`/api/image-file?id=${row.id}&v=${row.version}`}))});
