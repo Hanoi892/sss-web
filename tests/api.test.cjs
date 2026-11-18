@@ -27,13 +27,13 @@ test('실제 PostgreSQL 엔진을 사용하는 관리자 API 통합',async t=>{
  process.env.IMAGE_ADMIN_SETUP_TOKEN=randomBytes(32).toString('hex');
  let first,second;
  await t.test('미인증 업로드·목록·수정 차단',async()=>{for(const [route,args] of [['upload',{method:'POST',body:{action:'prepare'}}],['images',{url:'/?admin=1'}],['images',{method:'POST',body:{action:'edit'}}]])assert.equal((await request(route,{...args,authenticated:false})).status,401);});
- await t.test('설정 토큰 검증 및 최초 관리자 로그인',async()=>{
+ await t.test('설정 토큰 검증 및 한 글자 한글 아이디·한 글자 비밀번호 생성',async()=>{
   assert.equal((await request('auth')).data.initialized,false);
-  assert.equal((await request('auth',{method:'POST',body:{username:'admin',password:'test-password-123',setupToken:'wrong'}})).status,403);
-  const result=await request('auth',{method:'POST',body:{username:'admin',password:'test-password-123',setupToken:process.env.IMAGE_ADMIN_SETUP_TOKEN}});assert.equal(result.status,200);cookie=result.headers['set-cookie'].split(';')[0];assert.equal((await request('auth')).data.authenticated,true);
-  assert.equal((await request('auth',{method:'POST',body:{username:'admin',password:'incorrect'}})).status,401);
+  assert.equal((await request('auth',{method:'POST',body:{username:'가',password:'1',setupToken:'wrong'}})).status,403);
+  const result=await request('auth',{method:'POST',body:{username:'가',password:'1',setupToken:process.env.IMAGE_ADMIN_SETUP_TOKEN}});assert.equal(result.status,200);cookie=result.headers['set-cookie'].split(';')[0];assert.equal((await request('auth')).data.authenticated,true);
+  assert.equal((await request('auth',{method:'POST',body:{username:'가',password:'incorrect'}})).status,401);
  });
- await t.test('첫 설정 후 토큰으로 관리자 덮어쓰기 차단',async()=>{const r=await request('auth',{method:'POST',body:{username:'attacker',password:'test-password-123',setupToken:process.env.IMAGE_ADMIN_SETUP_TOKEN}});assert.equal(r.status,401);});
+ await t.test('첫 설정 후 토큰으로 관리자 덮어쓰기 차단',async()=>{const r=await request('auth',{method:'POST',body:{username:'attacker',password:'1',setupToken:process.env.IMAGE_ADMIN_SETUP_TOKEN}});assert.equal(r.status,401);});
  await t.test('50MB 초과 및 미지원 파일명 차단',async()=>{for(const [bytes,filename,status] of [[51*1048576,'test.jpg',413],[100,'script.svg',400]])assert.equal((await request('upload',{method:'POST',body:{action:'prepare',bytes,filename}})).status,status);});
  await t.test('미지원 실제 바이트 차단 및 원본 정리',async()=>{const r=await upload(Buffer.from('<script>alert("malicious image file")</script>'));assert.equal(r.status,422);assert.equal([...objects.keys()].some(x=>x.startsWith(INPUT)),false);});
  await t.test('대기 원본 실제 용량 불일치 차단',async()=>{const b=await fixture('red'),id=await prepare(b);objects.set(key(INPUT,`incoming/${id}`),Buffer.concat([b,Buffer.from('extra')]));const r=await request('upload',{method:'POST',body:{action:'complete',id,title:'test',alt:'test',slot:'/hanoi/massage/amazing/#image-0'}});assert.equal(r.status,422);});
@@ -58,7 +58,7 @@ test('실제 PostgreSQL 엔진을 사용하는 관리자 API 통합',async t=>{
  await t.test('공개 취소 후 URL 직접 접근 차단',async()=>{assert.equal((await request('images',{method:'POST',body:{action:'edit',id:first,title:'대표',alt:'설명',slot:'/hanoi/massage/amazing/#image-0',published:false}})).status,200);assert.equal((await request('file',{url:`/?id=${first}`,authenticated:false})).status,404);});
  await t.test('요청 위조 방지',async()=>{assert.equal((await request('images',{method:'POST',origin:'https://evil.test',body:{action:'delete',id:first}})).status,403);});
  await t.test('삭제 후 이미지 접근 차단 및 저장 파일 정리',async()=>{assert.equal((await request('images',{method:'POST',body:{action:'delete',id:second}})).status,200);assert.equal((await request('file',{url:`/?id=${second}`})).status,404);assert.equal([...objects.keys()].filter(x=>x.startsWith(OUTPUT)).length,1);});
- await t.test('비밀번호 변경 시 모든 세션 폐기',async()=>{assert.equal((await request('auth',{method:'POST',body:{action:'password',currentPassword:'test-password-123',password:'new-password-12345'}})).status,200);assert.equal((await request('auth')).data.authenticated,false);});
- await t.test('잘못된 로그인 반복 시 제한',async()=>{let r;for(let i=0;i<12;i++)r=await request('auth',{method:'POST',body:{username:'admin',password:'wrong'}});assert.equal(r.status,429);});
+ await t.test('비밀번호 변경 시 모든 세션 폐기',async()=>{assert.equal((await request('auth',{method:'POST',body:{action:'password',currentPassword:'1',password:'2'}})).status,200);assert.equal((await request('auth')).data.authenticated,false);});
+ await t.test('잘못된 로그인 반복 시 제한',async()=>{let r;for(let i=0;i<12;i++)r=await request('auth',{method:'POST',body:{username:'가',password:'wrong'}});assert.equal(r.status,429);});
  await pglite.close();
 });
