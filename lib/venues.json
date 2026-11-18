@@ -370,5 +370,23 @@
     "label": "나트랑 비타민스파",
     "cover": "/nhatrang/massage/vitamin-spa/#cover",
     "gallery": "/nhatrang/massage/vitamin-spa/#gallery"
+  },
+  {
+    "page": "/golf/",
+    "label": "베트남 골프 여행 가이드",
+    "cover": "/golf/#cover",
+    "gallery": "/golf/#gallery"
+  },
+  {
+    "page": "/casino/",
+    "label": "베트남 카지노 여행 가이드",
+    "cover": "/casino/#cover",
+    "gallery": "/casino/#gallery"
+  },
+  {
+    "page": "/pool-villa/",
+    "label": "베트남 풀빌라 여행 가이드",
+    "cover": "/pool-villa/#cover",
+    "gallery": "/pool-villa/#gallery"
   }
 ]
