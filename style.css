@@ -83,3 +83,37 @@
 .city-hub-faq .faq{max-width:960px}
 @media(max-width:900px){.city-hub-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.city-hub-zones{grid-template-columns:1fr}}
 @media(max-width:610px){.city-hub-cards{grid-template-columns:1fr}.city-hub-category .heading{display:block}.city-hub-category .heading>.more{display:inline-block;margin-top:10px}.city-hub-card__text{font-size:14px!important}.city-hub-nav a{flex:1 1 42%;text-align:center}}
+
+
+/* Editorial SEO area: unique comparisons before the complete venue catalogue */
+.city-editorial{max-width:1100px;margin:30px 0 50px;line-height:1.86}
+.city-editorial__heading h2{font-size:clamp(25px,3.2vw,35px);line-height:1.38;letter-spacing:-1.1px;margin:7px 0 9px}
+.city-editorial__date{font-size:12px;color:var(--sub);margin-bottom:20px}
+.city-editorial__body{max-width:930px;color:#dae0eb;font-size:15px}
+.city-editorial__body p{margin:0 0 16px;line-height:1.95}
+.city-editorial__quick{display:flex;align-items:start;gap:16px;padding:17px 20px;border-top:1px solid var(--edge);border-bottom:1px solid var(--edge);margin:24px 0 26px}
+.city-editorial__quick strong{color:#f5cf91;white-space:nowrap;font-size:14px}
+.city-editorial__quick div{display:flex;flex-wrap:wrap;gap:9px;font-size:12px;color:var(--sub)}
+.city-editorial__quick span:not(:last-child)::after{content:"·";margin-left:9px;color:var(--gold)}
+.city-editorial__block{padding:28px 0 27px;border-top:1px solid var(--edge);scroll-margin-top:112px}
+.city-editorial__block>h2{font-size:clamp(22px,2.5vw,27px);line-height:1.45;margin:0 0 11px}
+.city-editorial__block>p{max-width:940px;font-size:14px;line-height:1.85;color:var(--sub);margin:0 0 18px}
+.city-editorial__scroll{overflow-x:auto;border-radius:11px;border:1px solid var(--edge)}
+.city-editorial__table{width:100%;min-width:710px;margin:0}
+.city-editorial__table th,.city-editorial__table td{text-align:left;font-size:13px;line-height:1.75;padding:12px 14px;vertical-align:top}
+.city-editorial__table tbody th{color:#f6dfba;min-width:140px;font-weight:800}
+.city-editorial__table a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.city-editorial__price tbody td:nth-child(2){white-space:nowrap;color:#f2d6a9;font-weight:800}
+.city-editorial__block .city-editorial__caution{color:#d9c4a1;font-size:13px;margin:14px 0 9px}
+.city-editorial__block .city-editorial__links{margin:12px 0 0;font-size:13px}
+.city-editorial__links a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.city-editorial__routes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.city-editorial__routes article{padding:22px;border:1px solid var(--edge);border-radius:12px;background:var(--panel)}
+.city-editorial__routes h3{font-size:17px;margin:5px 0 12px;line-height:1.5}
+.city-editorial__routes p{color:var(--sub);font-size:13px;line-height:1.87}
+.city-editorial__routes a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.city-editorial__number{font-size:12px;font-weight:800;color:var(--gold)}
+.city-editorial__method{padding:22px 25px;background:#121823;border:1px solid var(--edge);border-radius:12px;margin-top:18px}
+.city-editorial__method h2{font-size:17px;margin:0 0 7px}
+.city-editorial__method p{font-size:13px;color:var(--sub);line-height:1.85;margin:0}
+@media(max-width:760px){.city-editorial__quick{display:block}.city-editorial__quick div{margin-top:9px}.city-editorial__routes{grid-template-columns:1fr}.city-editorial__routes article{padding:18px}}
