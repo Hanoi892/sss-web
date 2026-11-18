@@ -117,3 +117,51 @@
 .city-editorial__method h2{font-size:17px;margin:0 0 7px}
 .city-editorial__method p{font-size:13px;color:var(--sub);line-height:1.85;margin:0}
 @media(max-width:760px){.city-editorial__quick{display:block}.city-editorial__quick div{margin-top:9px}.city-editorial__routes{grid-template-columns:1fr}.city-editorial__routes article{padding:18px}}
+
+
+/* Regional industry category hubs – readable editorials, verified comparisons, photo-first venue list */
+.category-hub{padding:42px 0 70px;background:linear-gradient(180deg,#111722 0%,#0b0d12 24%)}
+.category-hub__index{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+.category-hub__index a{font-size:12px;font-weight:800;padding:9px 14px;border:1px solid #485166;border-radius:8px;background:#1b2330;color:#eecb95}
+.category-hub__index a:hover{border-color:var(--gold);color:white}
+.category-hub__article{max-width:1100px;margin:0 auto}
+.category-hub__section{border-top:1px solid var(--edge);padding:29px 0 38px;scroll-margin-top:110px}
+.category-hub__section:first-child{border-top:0;padding-top:4px}
+.category-hub__section h2{font-size:clamp(23px,3vw,31px);line-height:1.44;letter-spacing:-.7px;margin:5px 0 15px}
+.category-hub__section>p{max-width:990px;font-size:15px;line-height:1.9;color:#cdd6e5;margin:0 0 15px}
+.category-hub__section h3{font-size:19px;line-height:1.5}
+.category-hub__meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:#9facbd;font-size:12px;margin:19px 0 2px}
+.category-hub__meta strong{color:#e9c595}
+.category-hub__tablewrap{overflow-x:auto;border:1px solid var(--edge);border-radius:10px;margin:21px 0}
+.category-hub__tablewrap .table{min-width:720px;width:100%;margin:0}
+.category-hub__tablewrap .table th,.category-hub__tablewrap .table td{font-size:13px;line-height:1.7;vertical-align:top;text-align:left}
+.category-hub__tablewrap .table tbody th{min-width:135px;color:#f4d2a0}
+.category-hub__tablewrap .table a{color:#e5bd80;text-decoration:underline;text-underline-offset:3px}
+.category-hub__venues{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:23px}
+.category-hub__venue{background:#151b27;border:1px solid #354054;border-radius:14px;overflow:hidden;display:grid;grid-template-columns:150px minmax(0,1fr);min-width:0}
+.category-hub__venue:hover{border-color:#ac8856}
+.category-hub__media{display:block;min-height:175px;background:#1b2230;overflow:hidden}
+.category-hub__media .picture{height:100%;min-height:175px;width:100%;aspect-ratio:3/4}
+.category-hub__venuebody{padding:17px 18px;min-width:0;display:flex;flex-direction:column}
+.category-hub__venuetype{font-size:10px;font-weight:800;color:var(--gold);letter-spacing:1.2px}
+.category-hub__venuebody h3{font-size:19px;margin:6px 0 8px}
+.category-hub__venuebody>p{font-size:13px;line-height:1.85;color:#d7deeb;margin:0 0 13px;flex:1}
+.category-hub__venuebody dl{border-top:1px solid var(--edge);padding-top:9px;margin:0 0 10px}
+.category-hub__venuebody dl div{display:grid;grid-template-columns:43px minmax(0,1fr);gap:6px;font-size:11px;line-height:1.6;margin:3px 0}
+.category-hub__venuebody dt{color:#e7bc80;font-weight:800}
+.category-hub__venuebody dd{color:#9eabbd;margin:0;overflow-wrap:anywhere}
+.category-hub__goto{margin-top:auto;font-size:12px;color:var(--gold);font-weight:800}
+.category-hub__note{color:#d4bd98!important;font-size:13px!important}
+.category-hub__bullets{padding-left:23px;color:#cad4e1;font-size:14px;line-height:1.9}
+.category-hub__bullets li{margin:8px 0}
+.category-hub__areas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0}
+.category-hub__areas article{border:1px solid var(--edge);border-radius:11px;padding:19px;background:var(--panel)}
+.category-hub__areas article h3{margin:0 0 9px;font-size:17px;color:#f4cb8f}
+.category-hub__areas article p{color:var(--sub);font-size:13px;line-height:1.85;margin:0}
+.category-hub__editorial{border:1px solid var(--edge);border-radius:11px;padding:22px 25px;background:#101721;margin:24px 0}
+.category-hub__editorial h2{font-size:20px;margin:0 0 10px}
+.category-hub__editorial p{color:var(--sub);font-size:13px;line-height:1.85;margin:7px 0}
+.category-hub__editorial a{color:var(--gold);text-decoration:underline;text-underline-offset:3px}
+.category-hub__section .faq{max-width:1000px}
+@media(max-width:1060px){.category-hub__venues{grid-template-columns:1fr}.category-hub__areas{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.category-hub{padding-top:28px}.category-hub__index a{flex:1 1 27%;text-align:center}.category-hub__venue{grid-template-columns:106px minmax(0,1fr)}.category-hub__media,.category-hub__media .picture{min-height:145px}.category-hub__venuebody{padding:13px}.category-hub__venuebody h3{font-size:17px}.category-hub__venuebody>p{font-size:12px;line-height:1.75}.category-hub__venuebody dl div{grid-template-columns:40px minmax(0,1fr)}.category-hub__areas{grid-template-columns:1fr}}
