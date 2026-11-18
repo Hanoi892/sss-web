@@ -67,6 +67,12 @@ test('실제 PostgreSQL 엔진을 사용하는 관리자 API 통합',async t=>{
  });
  await t.test('요청 위조 방지',async()=>{assert.equal((await request('images',{method:'POST',origin:'https://evil.test',body:{action:'delete',id:first}})).status,403);});
  await t.test('삭제 후 이미지 접근 차단 및 저장 파일 정리',async()=>{assert.equal((await request('images',{method:'POST',body:{action:'delete',id:second}})).status,200);assert.equal((await request('file',{url:`/?id=${second}`})).status,404);assert.equal([...objects.keys()].filter(x=>x.startsWith(OUTPUT)).length,1);});
+ await t.test('관리자 사진 업로드는 100회 이후에도 시간당 횟수 제한 없이 가능',async()=>{
+  for(let i=0;i<105;i++){
+   const result=await request('upload',{method:'POST',body:{action:'prepare',bytes:100,filename:'batch.jpg'}});
+   assert.equal(result.status,200,'관리자 업로드 준비 요청 '+(i+1));
+  }
+ });
  await t.test('비밀번호 변경 시 모든 세션 폐기',async()=>{assert.equal((await request('auth',{method:'POST',body:{action:'password',currentPassword:'1',password:'2'}})).status,200);assert.equal((await request('auth')).data.authenticated,false);});
  await t.test('잘못된 로그인 반복 시 제한',async()=>{let r;for(let i=0;i<12;i++)r=await request('auth',{method:'POST',body:{username:'가',password:'wrong'}});assert.equal(r.status,429);});
  await pglite.close();

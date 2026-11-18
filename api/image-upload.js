@@ -9,7 +9,6 @@ module.exports=s.wrapper(async(req,res)=>{
  if(req.method!=='POST')s.fail(405,'지원하지 않는 요청입니다.');s.origin(req);await s.requireAdmin(req);
  const b=await s.body(req);
  if(b.action==='prepare'){
-   await s.rate(req,'prepare',100,3600);
    if(!Number.isSafeInteger(b.bytes)||b.bytes<12||b.bytes>st.MAX_INPUT)s.fail(413,'사진은 장당 최대 50MB까지 업로드할 수 있습니다.');
    if(typeof b.filename!=='string'||! /\.(jpe?g|png|webp|avif|hei[cf])$/i.test(b.filename))s.fail(400,'지원하지 않는 파일 형식입니다.');
    await st.initStorage();
