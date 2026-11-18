@@ -5,6 +5,7 @@ let setupToken=new URLSearchParams(location.hash.slice(1)).get('setup')||'';
 if(location.hash)history.replaceState(null,'',location.pathname);
 const fmt=n=>{n=Number(n);return n>=1048576?(n/1048576).toFixed(2)+' MB':(n/1024).toFixed(1)+' KB';};
 const notice=message=>{$('notice').textContent=message;};
+window.addEventListener('hashchange',()=>{const token=new URLSearchParams(location.hash.slice(1)).get('setup');if(token){setupToken=token;history.replaceState(null,'',location.pathname);notice('최초 관리자 아이디와 비밀번호를 설정해 주세요.');}});
 function el(tag,text,cls){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e;}
 async function api(path,body){const response=await fetch(path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined,cache:'no-store'});const data=await response.json();if(!response.ok){if(response.status===401&&!path.includes('image-auth'))showLogin();throw new Error(data.error||'처리에 실패했습니다.');}return data;}
 function showLogin(initialized=true){$('manager').hidden=true;$('logout').hidden=true;$('login').hidden=false;$('setupHelp').hidden=initialized;$('loginHelp').textContent=initialized?'관리자 계정으로 로그인해 주세요.':'최초 관리자 계정을 설정해 주세요.';$('loginForm').querySelector('button').textContent=initialized?'로그인':'관리자 계정 만들기';if(!initialized&&!setupToken)notice('최초 관리자 설정 링크로 접속해 주세요.');}
