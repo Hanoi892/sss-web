@@ -40,5 +40,6 @@ async function main(){
  if(code!==200||typeof body.initialized!=='boolean'||body.authenticated!==false)throw new Error('Image auth readiness check failed');
  console.log('image-manager: GET /api/image-auth handler passed (200); dedicated schema ready; admin '+(body.initialized?'configured':'first setup required'));
  await checkStorage();
+ await require('./normalize-images.cjs').normalizeExisting();
 }
 main().catch(e=>{console.error('image-manager readiness failed:',e.code||e.name);process.exitCode=1;}).finally(()=>db().end());

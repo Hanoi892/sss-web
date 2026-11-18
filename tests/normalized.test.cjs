@@ -1,0 +1,4 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),sharp=require('sharp');
+const {optimize}=require('../lib/optimize.cjs');
+for(const [width,height] of [[300,900],[1600,500],[1280,960]])test(`규격 통일 ${width}x${height}`,async()=>{const input=await sharp({create:{width,height,channels:3,background:'red'}}).jpeg().toBuffer();const r=await optimize(input);assert.equal(r.width,1280);assert.equal(r.height,960);assert.ok(r.bytes<307200);const metadata=await sharp(r.buffer).metadata();assert.equal(metadata.width,1280);assert.equal(metadata.height,960);});
+test('투명 배경 유지',async()=>{const input=await sharp({create:{width:300,height:700,channels:4,background:{r:50,g:100,b:150,alpha:0.4}}}).png().toBuffer();const r=await optimize(input);assert.equal((await sharp(r.buffer).metadata()).hasAlpha,true);assert.ok(r.bytes<307200);});
