@@ -35,7 +35,7 @@ function addFiles(files,target=null){
  if(!target&&$('uploadRole').value==='cover'&&files.length>1){notice('대표 사진은 한 장만 선택해 주세요. 여러 장은 추가 사진을 선택해 주세요.');return;}
  for(const file of files){
   if(!/\.(jpe?g|png|webp|avif|hei[cf])$/i.test(file.name)||file.size>50*1048576||file.size<12){notice(`${file.name}: 지원 형식과 50MB 제한을 확인해 주세요.`);continue;}
-  const item={file,slot:target?.slot||$('uploadSlot').value.replace(/#cover$/,'#'+$('uploadRole').value),published:target?.published??$('uploadPublished').checked,replaceId:target?.id||(!target&&$('uploadRole').value==='cover'?images.find(x=>x.slot===$('uploadSlot').value)?.id:undefined)};
+  const item={file,slot:target?.slot||($('uploadRole').value==='gallery'?$('uploadSlot').value.replace(/#cover$/,'#gallery').replace(/-cover$/,'-gallery'):$('uploadSlot').value),published:target?.published??$('uploadPublished').checked,replaceId:target?.id||(!target&&$('uploadRole').value==='cover'?images.find(x=>x.slot===$('uploadSlot').value)?.id:undefined)};
   if(!item.slot){notice('사이트 반영 위치를 선택해 주세요.');continue;}
   const row=el('div',undefined,'queue-item'),preview=el('img');preview.alt='선택한 사진 미리보기';const url=URL.createObjectURL(file);preview.src=url;preview.onerror=()=>{preview.replaceWith(el('span','HEIC 미리보기는 변환 후 표시됩니다.','queue-placeholder'));};item.objectUrl=url;
   const info=el('div');info.append(el('strong',file.name),el('div',`${fmt(file.size)} · ${slots.find(s=>s.id===item.slot)?.label||item.slot}`,'status'));
